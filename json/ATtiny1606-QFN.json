@@ -1,0 +1,286 @@
+{
+    "cfg": {
+        "bot_txt": "The notation RX.1 is alternate position so Serial.swap(). You must choose RX.1 and TX.1 or RX and TX together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\n{srcchip} Diagrams by ObviousInRetrospect.",
+        "chip": "ATtiny1606",
+        "shape": "square",
+        "srcchip": "ATtiny1606 dfp.3.0.151",
+        "titlechip": "ATtiny--06-QFN"
+    },
+    "pins": {
+        "QFN": {
+            "1": {
+                "ADC": [
+                    "AIN2"
+                ],
+                "CCL": [
+                    "0,IN2"
+                ],
+                "EVSYS": [
+                    "Eo0"
+                ],
+                "Name": "PA2",
+                "PIN": "1",
+                "SPI": [
+                    "MISO"
+                ],
+                "USART": [
+                    "RX.1"
+                ]
+            },
+            "10": {
+                "AC": [
+                    "AINN1"
+                ],
+                "ADC": [
+                    "AIN9"
+                ],
+                "CCL": [
+                    "0,OUT.1"
+                ],
+                "Name": "PB4",
+                "PIN": "10",
+                "TCA": [
+                    "WO1.1"
+                ]
+            },
+            "11": {
+                "Name": "PB3",
+                "PIN": "11",
+                "Special": [
+                    "TOSC1"
+                ],
+                "TCA": [
+                    "WO0.1"
+                ],
+                "USART": [
+                    "RX"
+                ]
+            },
+            "12": {
+                "EVSYS": [
+                    "Eo1"
+                ],
+                "Name": "PB2",
+                "PIN": "12",
+                "Special": [
+                    "TOSC2"
+                ],
+                "TCA": [
+                    "WO2"
+                ],
+                "USART": [
+                    "TX"
+                ]
+            },
+            "13": {
+                "ADC": [
+                    "AIN10"
+                ],
+                "Name": "PB1",
+                "PIN": "13",
+                "TCA": [
+                    "WO1"
+                ],
+                "TWI": [
+                    "SDA"
+                ],
+                "USART": [
+                    "XCK"
+                ]
+            },
+            "14": {
+                "ADC": [
+                    "AIN11"
+                ],
+                "Name": "PB0",
+                "PIN": "14",
+                "TCA": [
+                    "WO0"
+                ],
+                "TWI": [
+                    "SCL"
+                ],
+                "USART": [
+                    "XDIR"
+                ]
+            },
+            "15": {
+                "Name": "PC0",
+                "PIN": "15",
+                "SPI": [
+                    "SCK.1"
+                ],
+                "TCB": [
+                    "WO.1"
+                ]
+            },
+            "16": {
+                "CCL": [
+                    "1,OUT.1"
+                ],
+                "Name": "PC1",
+                "PIN": "16",
+                "SPI": [
+                    "MISO.1"
+                ]
+            },
+            "17": {
+                "EVSYS": [
+                    "Eo2"
+                ],
+                "Name": "PC2",
+                "PIN": "17",
+                "SPI": [
+                    "MOSI.1"
+                ]
+            },
+            "18": {
+                "CCL": [
+                    "1,IN0"
+                ],
+                "Name": "PC3",
+                "PIN": "18",
+                "SPI": [
+                    "SS.1"
+                ],
+                "TCA": [
+                    "WO3.1"
+                ]
+            },
+            "19": {
+                "ADC": [
+                    "AIN0"
+                ],
+                "CCL": [
+                    "0,IN0"
+                ],
+                "Name": "PA0",
+                "PIN": "19",
+                "Special": [
+                    "RESET",
+                    "UPDI"
+                ]
+            },
+            "2": {
+                "ADC": [
+                    "AIN3"
+                ],
+                "Name": "PA3",
+                "PIN": "2",
+                "SPI": [
+                    "SCK"
+                ],
+                "Special": [
+                    "CLKI"
+                ],
+                "TCA": [
+                    "WO3"
+                ],
+                "USART": [
+                    "XCK.1"
+                ]
+            },
+            "20": {
+                "ADC": [
+                    "AIN1"
+                ],
+                "CCL": [
+                    "0,IN1"
+                ],
+                "Name": "PA1",
+                "PIN": "20",
+                "SPI": [
+                    "MOSI"
+                ],
+                "Special": [
+                    "BREAK"
+                ],
+                "USART": [
+                    "TX.1"
+                ]
+            },
+            "3": {
+                "Name": "GND",
+                "PIN": "3"
+            },
+            "4": {
+                "Name": "VDD",
+                "PIN": "4"
+            },
+            "5": {
+                "ADC": [
+                    "AIN4"
+                ],
+                "CCL": [
+                    "0,OUT"
+                ],
+                "Name": "PA4",
+                "PIN": "5",
+                "SPI": [
+                    "SS"
+                ],
+                "TCA": [
+                    "WO4"
+                ],
+                "USART": [
+                    "XDIR.1"
+                ]
+            },
+            "6": {
+                "AC": [
+                    "OUT"
+                ],
+                "ADC": [
+                    "AIN5"
+                ],
+                "Name": "PA5",
+                "PIN": "6",
+                "TCA": [
+                    "WO5"
+                ],
+                "TCB": [
+                    "WO"
+                ]
+            },
+            "7": {
+                "AC": [
+                    "AINN0"
+                ],
+                "ADC": [
+                    "AIN6"
+                ],
+                "Name": "PA6",
+                "PIN": "7"
+            },
+            "8": {
+                "AC": [
+                    "AINP0"
+                ],
+                "ADC": [
+                    "AIN7"
+                ],
+                "CCL": [
+                    "1,OUT"
+                ],
+                "Name": "PA7",
+                "PIN": "8"
+            },
+            "9": {
+                "AC": [
+                    "AINP1"
+                ],
+                "ADC": [
+                    "AIN8"
+                ],
+                "Name": "PB5",
+                "PIN": "9",
+                "Special": [
+                    "CLKO"
+                ],
+                "TCA": [
+                    "WO2.1"
+                ]
+            }
+        }
+    }
+}

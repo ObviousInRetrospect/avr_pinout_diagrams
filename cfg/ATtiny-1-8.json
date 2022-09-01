@@ -1,0 +1,13 @@
+{
+    "cfg": {
+        "bot_txt_pre": "WARNING: Atmel.ATtiny_DFP.2.0.368 uses wrong CCL signals from the 14+ signal assignments on the 8p package."
+    },
+    "del": {
+        "PA6":{"CCL":["1,OUT"]},
+        
+    }
+    "add": {
+        "PA6":{"CCL":["0,OUT"]},
+        "PA7":{"CCL":["1,OUT"]}
+    }
+}

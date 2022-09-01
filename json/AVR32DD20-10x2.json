@@ -1,0 +1,412 @@
+{
+    "cfg": {
+        "bot_txt_pre": "SPI.3 signals appearing on IO Multiplexing table in datasheet (PA0:MOSI.3, PA1:MISO.3, PC1:SS.3) are incorrect, per MCP case #01057955",
+        "chip": "AVR32DD20",
+        "shape": "rect",
+        "srcchip": "AVR32DD20 dfp.2.1.152",
+        "titlechip": "AVRxxDD20-10x2"
+    },
+    "pins": {
+        "10x2": {
+            "1": {
+                "Name": "GND",
+                "PIN": "1"
+            },
+            "10": {
+                "ADC": [
+                    "AIN26"
+                ],
+                "CCL": [
+                    "0,OUT.1"
+                ],
+                "Name": "PA6",
+                "PIN": "10",
+                "SPI": [
+                    "SCK"
+                ],
+                "TCD": [
+                    "WOC"
+                ],
+                "USART": [
+                    "XCK0.1"
+                ]
+            },
+            "11": {
+                "AC": [
+                    "OUT"
+                ],
+                "ADC": [
+                    "AIN27"
+                ],
+                "EVSYS": [
+                    "EoA.1"
+                ],
+                "Name": "PA7",
+                "PIN": "11",
+                "SPI": [
+                    "SS"
+                ],
+                "Special": [
+                    "CLKOUT"
+                ],
+                "TCD": [
+                    "WOD"
+                ],
+                "USART": [
+                    "XDIR0.1"
+                ],
+                "ZCD": [
+                    "ZOUT"
+                ]
+            },
+            "12": {
+                "ADC": [
+                    "AIN29"
+                ],
+                "CCL": [
+                    "1,IN1",
+                    "1,IN1.1"
+                ],
+                "Name": "PC1",
+                "PIN": "12",
+                "SPI": [
+                    "MISO.5",
+                    "MOSI.6"
+                ],
+                "TCA": [
+                    "WO1.2"
+                ],
+                "USART": [
+                    "TX0.4",
+                    "RX1"
+                ]
+            },
+            "13": {
+                "AC": [
+                    "AINN3"
+                ],
+                "ADC": [
+                    "AIN30"
+                ],
+                "CCL": [
+                    "1,IN2",
+                    "1,IN2.1"
+                ],
+                "EVSYS": [
+                    "EoC"
+                ],
+                "Name": "PC2",
+                "PIN": "13",
+                "SPI": [
+                    "SCK.5",
+                    "MISO.6"
+                ],
+                "Special": [
+                    "Fm+"
+                ],
+                "TCA": [
+                    "WO2.2"
+                ],
+                "TWI": [
+                    "SDAs",
+                    "SDA.2",
+                    "SDAs.3"
+                ],
+                "USART": [
+                    "RX0.4",
+                    "XCK1"
+                ],
+                "ZCD": [
+                    "ZIN"
+                ]
+            },
+            "14": {
+                "AC": [
+                    "AINP4"
+                ],
+                "ADC": [
+                    "AIN31"
+                ],
+                "CCL": [
+                    "1,OUT"
+                ],
+                "Name": "PC3",
+                "PIN": "14",
+                "SPI": [
+                    "SS.5",
+                    "SCK.6"
+                ],
+                "Special": [
+                    "Fm+"
+                ],
+                "TCA": [
+                    "WO3.2"
+                ],
+                "TWI": [
+                    "SCLs",
+                    "SCL.2",
+                    "SCLs.3"
+                ],
+                "USART": [
+                    "XCK0.4",
+                    "XDIR1"
+                ]
+            },
+            "15": {
+                "Name": "VDDIO2",
+                "PIN": "15"
+            },
+            "16": {
+                "ADC": [
+                    "AIN4"
+                ],
+                "Name": "PD4",
+                "PIN": "16",
+                "SPI": [
+                    "MOSI.4"
+                ],
+                "TCA": [
+                    "WO4.3"
+                ],
+                "TCD": [
+                    "WOC.4"
+                ],
+                "USART": [
+                    "TX0.3"
+                ]
+            },
+            "17": {
+                "ADC": [
+                    "AIN5"
+                ],
+                "Name": "PD5",
+                "PIN": "17",
+                "SPI": [
+                    "MISO.4"
+                ],
+                "TCA": [
+                    "WO5.3"
+                ],
+                "TCD": [
+                    "WOD.4"
+                ],
+                "USART": [
+                    "RX0.3"
+                ]
+            },
+            "18": {
+                "AC": [
+                    "AINP3"
+                ],
+                "ADC": [
+                    "AIN6"
+                ],
+                "CCL": [
+                    "2,OUT.1"
+                ],
+                "DAC": [
+                    "DACo"
+                ],
+                "Name": "PD6",
+                "PIN": "18",
+                "SPI": [
+                    "SCK.4"
+                ],
+                "USART": [
+                    "XCK0.3",
+                    "TX1.2"
+                ]
+            },
+            "19": {
+                "AC": [
+                    "AINN2"
+                ],
+                "ADC": [
+                    "AIN7"
+                ],
+                "EVSYS": [
+                    "EoD.1"
+                ],
+                "Name": "PD7",
+                "PIN": "19",
+                "SPI": [
+                    "SS.4"
+                ],
+                "Special": [
+                    "VREFA"
+                ],
+                "USART": [
+                    "XDIR0.3",
+                    "RX1.2"
+                ]
+            },
+            "2": {
+                "Name": "PF6",
+                "PIN": "2",
+                "Special": [
+                    "RESET"
+                ]
+            },
+            "20": {
+                "Name": "VDD",
+                "PIN": "20"
+            },
+            "3": {
+                "EVSYS": [
+                    "EoF.1"
+                ],
+                "Name": "PF7",
+                "PIN": "3",
+                "SPI": [
+                    "SS.6"
+                ],
+                "Special": [
+                    "UPDI"
+                ]
+            },
+            "4": {
+                "CCL": [
+                    "0,IN0",
+                    "0,IN0.1"
+                ],
+                "Name": "PA0",
+                "PIN": "4",
+                "SPI": [],
+                "Special": [
+                    "EXTCLK",
+                    "XTALHF1",
+                    "XTAL32K1.1"
+                ],
+                "TCA": [
+                    "WO0"
+                ],
+                "TWI": [
+                    "SDA.3"
+                ],
+                "USART": [
+                    "TX0"
+                ]
+            },
+            "5": {
+                "CCL": [
+                    "0,IN1",
+                    "0,IN1.1"
+                ],
+                "Name": "PA1",
+                "PIN": "5",
+                "SPI": [],
+                "Special": [
+                    "XTALHF2",
+                    "XTAL32K2.1"
+                ],
+                "TCA": [
+                    "WO1"
+                ],
+                "TWI": [
+                    "SCL.3"
+                ],
+                "USART": [
+                    "RX0"
+                ]
+            },
+            "6": {
+                "ADC": [
+                    "AIN22"
+                ],
+                "CCL": [
+                    "0,IN2",
+                    "0,IN2.1"
+                ],
+                "EVSYS": [
+                    "EoA"
+                ],
+                "Name": "PA2",
+                "PIN": "6",
+                "Special": [
+                    "Fm+"
+                ],
+                "TCA": [
+                    "WO2"
+                ],
+                "TCB": [
+                    "0,WO"
+                ],
+                "TWI": [
+                    "SDA",
+                    "SDA.1"
+                ],
+                "USART": [
+                    "XCK0",
+                    "TX0.2"
+                ]
+            },
+            "7": {
+                "ADC": [
+                    "AIN23"
+                ],
+                "CCL": [
+                    "0,OUT"
+                ],
+                "Name": "PA3",
+                "PIN": "7",
+                "Special": [
+                    "Fm+"
+                ],
+                "TCA": [
+                    "WO3"
+                ],
+                "TCB": [
+                    "1,WO"
+                ],
+                "TWI": [
+                    "SCL",
+                    "SCL.1"
+                ],
+                "USART": [
+                    "XDIR0",
+                    "RX0.2"
+                ]
+            },
+            "8": {
+                "ADC": [
+                    "AIN24"
+                ],
+                "Name": "PA4",
+                "PIN": "8",
+                "SPI": [
+                    "MOSI"
+                ],
+                "TCA": [
+                    "WO4"
+                ],
+                "TCD": [
+                    "WOA",
+                    "WOA.4"
+                ],
+                "USART": [
+                    "TX0.1"
+                ]
+            },
+            "9": {
+                "ADC": [
+                    "AIN25"
+                ],
+                "Name": "PA5",
+                "PIN": "9",
+                "SPI": [
+                    "MISO"
+                ],
+                "TCA": [
+                    "WO5"
+                ],
+                "TCD": [
+                    "WOB",
+                    "WOB.4"
+                ],
+                "USART": [
+                    "RX0.1"
+                ]
+            }
+        }
+    }
+}

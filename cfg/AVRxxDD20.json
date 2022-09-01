@@ -1,0 +1,74 @@
+{
+    "packages": {
+        "10x2": {
+            "pos2pad": {
+                "1": "GND",
+                "10": "PA6",
+                "11": "PA7",
+                "12": "PC1",
+                "13": "PC2",
+                "14": "PC3",
+                "15": "VDDIO2",
+                "16": "PD4",
+                "17": "PD5",
+                "18": "PD6",
+                "19": "PD7",
+                "2": "PF6",
+                "20": "VDD",
+                "3": "PF7",
+                "4": "PA0",
+                "5": "PA1",
+                "6": "PA2",
+                "7": "PA3",
+                "8": "PA4",
+                "9": "PA5"
+            },
+            "cfg":{"shape": "rect"}
+        },
+        "QFN": {
+            "pos2pad": {
+                "1": "PA4",
+                "10": "PD5",
+                "11": "PD6",
+                "12": "PD7",
+                "13": "VDD",
+                "14": "GND",
+                "15": "PF6",
+                "16": "PF7",
+                "17": "PA0",
+                "18": "PA1",
+                "19": "PA2",
+                "2": "PA5",
+                "20": "PA3",
+                "3": "PA6",
+                "4": "PA7",
+                "5": "PC1",
+                "6": "PC2",
+                "7": "PC3",
+                "8": "VDDIO2",
+                "9": "PD4"
+            },
+            "cfg":{"shape": "square"}
+        }
+    },
+    "del": {
+        "PA0": {
+            "SPI": [
+                "MOSI.3"
+            ]
+        },
+        "PA1": {
+            "SPI": [
+                "MISO.3"
+            ]
+        },
+        "PC1": {
+            "SPI": [
+                "SS.3"
+            ]
+        }
+    },
+    "cfg": {
+        "bot_txt_pre":"SPI.3 signals appearing on IO Multiplexing table in datasheet (PA0:MOSI.3, PA1:MISO.3, PC1:SS.3) are incorrect, per MCP case #01057955"
+    }
+}

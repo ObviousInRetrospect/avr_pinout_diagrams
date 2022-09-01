@@ -1,0 +1,154 @@
+{
+    "cfg": {
+        "bot_txt": "The notation RX.1 is alternate position so Serial.swap(). You must choose RX.1 and TX.1 or RX and TX together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\n{srcchip} Diagrams by ObviousInRetrospect.",
+        "chip": "ATtiny402",
+        "srcchip": "ATtiny402 dfp.3.0.151",
+        "titlechip": "ATtiny--02"
+    },
+    "pins": {
+        "SOIC8": {
+            "1": {
+                "Name": "VDD",
+                "PIN": "1"
+            },
+            "2": {
+                "AC": [
+                    "AINN0"
+                ],
+                "ADC": [
+                    "AIN6"
+                ],
+                "CCL": [
+                    "1,OUT"
+                ],
+                "Name": "PA6",
+                "PIN": "2",
+                "SPI": [
+                    "MOSI.1"
+                ],
+                "TCB": [
+                    "WO"
+                ],
+                "USART": [
+                    "TX"
+                ]
+            },
+            "3": {
+                "AC": [
+                    "AINP0"
+                ],
+                "ADC": [
+                    "AIN7"
+                ],
+                "Name": "PA7",
+                "PIN": "3",
+                "SPI": [
+                    "MISO.1"
+                ],
+                "TCA": [
+                    "WO0.1"
+                ],
+                "USART": [
+                    "RX"
+                ]
+            },
+            "4": {
+                "ADC": [
+                    "AIN1"
+                ],
+                "CCL": [
+                    "0,IN1"
+                ],
+                "Name": "PA1",
+                "PIN": "4",
+                "SPI": [
+                    "MOSI"
+                ],
+                "Special": [
+                    "BREAK"
+                ],
+                "TCA": [
+                    "WO1"
+                ],
+                "TWI": [
+                    "SDA"
+                ],
+                "USART": [
+                    "TX.1"
+                ]
+            },
+            "5": {
+                "ADC": [
+                    "AIN2"
+                ],
+                "CCL": [
+                    "0,IN2"
+                ],
+                "EVSYS": [
+                    "Eo0"
+                ],
+                "Name": "PA2",
+                "PIN": "5",
+                "SPI": [
+                    "MISO"
+                ],
+                "TCA": [
+                    "WO2"
+                ],
+                "TWI": [
+                    "SCL"
+                ],
+                "USART": [
+                    "RX.1"
+                ]
+            },
+            "6": {
+                "ADC": [
+                    "AIN0"
+                ],
+                "CCL": [
+                    "0,IN0"
+                ],
+                "Name": "PA0",
+                "PIN": "6",
+                "SPI": [
+                    "SS"
+                ],
+                "Special": [
+                    "RESET",
+                    "UPDI"
+                ],
+                "USART": [
+                    "XDIR"
+                ]
+            },
+            "7": {
+                "AC": [
+                    "OUT"
+                ],
+                "ADC": [
+                    "AIN3"
+                ],
+                "Name": "PA3",
+                "PIN": "7",
+                "SPI": [
+                    "SCK"
+                ],
+                "Special": [
+                    "CLKI"
+                ],
+                "TCA": [
+                    "WO3",
+                    "WO0"
+                ],
+                "USART": [
+                    "XCK"
+                ]
+            },
+            "8": {
+                "Name": "GND",
+                "PIN": "8"
+            }
+        }
+    }
+}

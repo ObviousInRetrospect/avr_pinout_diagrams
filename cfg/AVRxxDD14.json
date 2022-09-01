@@ -1,0 +1,22 @@
+{
+    "del": {
+        "PA0": {
+            "SPI": [
+                "MOSI.3"
+            ]
+        },
+        "PA1": {
+            "SPI": [
+                "MISO.3"
+            ]
+        },
+        "PC1": {
+            "SPI": [
+                "SS.3"
+            ]
+        }
+    },
+    "cfg": {
+        "bot_txt_pre":"SPI.3 signals appearing on IO Multiplexing table in datasheet (PA0:MOSI.3, PA1:MISO.3, PC1:SS.3) are incorrect, per MCP case #01057955"
+    }
+}

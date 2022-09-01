@@ -1,0 +1,34 @@
+{
+    "add":{
+        "PA2": {
+            "Special": [
+                "Fm+"
+            ]
+        },
+        "PA3": {
+            "Special": [
+                "Fm+"
+            ]
+        },
+        "PC2": {
+            "Special": [
+                "Fm+"
+            ]
+        },
+        "PC3": {
+            "Special": [
+                "Fm+"
+            ]
+        },
+        "PD7": {
+            "Special": [
+                "VREFA"
+            ]
+        },
+        "PF7": {
+            "Special": [
+                "UPDI"
+            ]
+        }
+    }
+}
