@@ -1,9 +1,9 @@
-LABELS,DEFAULT,TYPE,GROUP,Name,Special,ADC,AC,DAC,USART,SPI,TWI,TCA,TCB,TCD,EVSYS,CCL,PTC
+LABELS,DEFAULT,TYPE,GROUP,Name,Special,ADC,AC,DAC,USART,SPI,TWI,TCA,TCB,TCD,EVSYS,CCL
 
 BORDER COLOR, grey
 BORDER WIDTH, 2
 BORDER OPACITY, 1
-FILL COLOR, white, white, white, black,grey,forestgreen,seagreen,limegreen,mediumblue,dodgerblue,steelblue,red,maroon,mediumvioletred,darkorange,goldenrod,darkorchid
+FILL COLOR, white, white, white, black,grey,forestgreen,teal,limegreen,mediumblue,dodgerblue,steelblue,red,maroon,mediumvioletred,darkorange,goldenrod
 
 OPACITY, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 #FONT, Menlo,,
@@ -107,56 +107,32 @@ TEXT, none, black, B1 8, NL
 ANCHOR, 1545, 755
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PINTEXT, POWER, IO, POWER , VDD , PowerPin,"1.8V-5.5V"
-PIN, DIGITAL , IO, ,PIN_PA4, , "0,AIN4|1,AIN0", , , XDIR.1, SS, , WO4, , WOA, , "0,OUT", 
-ANCHOR, 1545, 930
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , X0|Y0
-ANCHOR, 1545, 1005
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA5, VREFA, "0,AIN5|1,AIN1", "0,OUT|1,AINN0", , , , , WO5, "0,WO", , , , 
+PIN, DIGITAL , IO, ,PIN_PA4, , "0,AIN4|1,AIN0", , , XDIR.1, SS, , WO4, , WOA, , "0,OUT"
+PIN, DIGITAL , IO, ,PIN_PA5, VREFA, "0,AIN5|1,AIN1", "0,OUT|1,AINN0", , , , , WO5, "0,WO", , , 
 ANCHOR, 1545, 1055
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , WOB, , , X1|Y1
+PIN, NONE , NONE, ,, , , , , , , , , , WOB, , 
 ANCHOR, 1545, 1130
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA6, , "0,AIN6|1,AIN2", "0,AINN0|1,AINP1|2,AINP0", DACo, , , , , , , , , 
-ANCHOR, 1545, 1180
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , X2|Y2
-ANCHOR, 1545, 1255
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA7, , "0,AIN7|1,AIN3", "0,AINP0|1,AINP0|2,AINN0", , , , , , , , , "1,OUT", 
-ANCHOR, 1545, 1305
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , X3|Y3
-ANCHOR, 1545, 1380
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PB3, TOSC1, , "1,OUT", , RX, , , WO0.1, , , , , 
-PIN, DIGITAL , IO, ,PIN_PB2, TOSC2, , "2,OUT", , TX, , , WO2, , , Eo1, , DS0
+PIN, DIGITAL , IO, ,PIN_PA6, , "0,AIN6|1,AIN2", "0,AINN0|1,AINP1|2,AINP0", DACo, , , , , , , , 
+PIN, DIGITAL , IO, ,PIN_PA7, , "0,AIN7|1,AIN3", "0,AINP0|1,AINP0|2,AINN0", , , , , , , , , "1,OUT"
+PIN, DIGITAL , IO, ,PIN_PB3, TOSC1, , "1,OUT", , RX, , , WO0.1, , , , 
+PIN, DIGITAL , IO, ,PIN_PB2, TOSC2, , "2,OUT", , TX, , , WO2, , , Eo1, 
 
 # Right Side Pins
 ANCHOR, 1985, 755
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PINTEXT, POWER, IO, POWER , GND, PowerPin, Ground,
-PIN, DIGITAL , IO, ,PIN_PA3, CLKI, "0,AIN3", , , XCK.1, SCK, , WO3, "1,WO", , , , 
-PIN, DIGITAL , IO, ,PIN_PA2, , "0,AIN2", , , RX.1, MISO, SCL.1, , , , Eo0, "0,IN2", 
-PIN, DIGITAL , IO, ,PIN_PA1, BREAK, "0,AIN1", , , TX.1, MOSI, SDA.1, , , , , "0,IN1", 
-PIN, DIGITAL , IO, ,PIN_PA0, RESET|UPDI, "0,AIN0", , , , , , , , , , "0,IN0", 
-PIN, DIGITAL , IO, ,PIN_PB0, , "0,AIN11", "1,AINP2|2,AINP1", , XDIR, , SCL, WO0, , , , , 
-
-# Right Side Pins
-ANCHOR, 1985, 1430
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , X5|Y5
-
-# Right Side Pins
-ANCHOR, 1985, 1505
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PB1, , "0,AIN10", "0,AINP2", , XCK, , SDA, WO1, , , , , X4|Y4
+PIN, DIGITAL , IO, ,PIN_PA3, CLKI, "0,AIN3", , , XCK.1, SCK, , WO3, "1,WO", , , 
+PIN, DIGITAL , IO, ,PIN_PA2, , "0,AIN2", , , RX.1, MISO, SCL.1, , , , Eo0, "0,IN2"
+PIN, DIGITAL , IO, ,PIN_PA1, BREAK, "0,AIN1", , , TX.1, MOSI, SDA.1, , , , , "0,IN1"
+PIN, DIGITAL , IO, ,PIN_PA0, RESET|UPDI, "0,AIN0", , , , , , , , , , "0,IN0"
+PIN, DIGITAL , IO, ,PIN_PB0, , "0,AIN11", "1,AINP2|2,AINP1", , XDIR, , SCL, WO0, , , , 
+PIN, DIGITAL , IO, ,PIN_PB1, , "0,AIN10", "0,AINP2", , XCK, , SDA, WO1, , , , 
 
 # legend
 ANCHOR, 800, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, Special, ADC, AC, DAC, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL, PTC
+PIN, NONE , NONE, ,Name, Special, ADC, AC, DAC, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
 MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL

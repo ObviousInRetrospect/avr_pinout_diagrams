@@ -3,7 +3,7 @@ LABELS,DEFAULT,TYPE,GROUP,Name,Special,ADC,AC,DAC,ZCD,USART,SPI,TWI,TCA,TCD,EVSY
 BORDER COLOR, grey
 BORDER WIDTH, 2
 BORDER OPACITY, 1
-FILL COLOR, white, white, white, black,grey,forestgreen,seagreen,limegreen,olivedrab,mediumblue,dodgerblue,steelblue,red,mediumvioletred,darkorange,goldenrod
+FILL COLOR, white, white, white, black,grey,forestgreen,teal,limegreen,olivedrab,mediumblue,dodgerblue,steelblue,red,mediumvioletred,darkorange,goldenrod
 
 OPACITY, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 #FONT, Menlo,,

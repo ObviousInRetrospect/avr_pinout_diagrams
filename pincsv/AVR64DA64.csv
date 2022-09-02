@@ -1,9 +1,9 @@
-LABELS,DEFAULT,TYPE,GROUP,Name,Special,ADC,AC,DAC,ZCD,USART,SPI,TWI,TCA,TCB,TCD,EVSYS,CCL,PTC
+LABELS,DEFAULT,TYPE,GROUP,Name,Special,ADC,AC,DAC,ZCD,USART,SPI,TWI,TCA,TCB,TCD,EVSYS,CCL
 
 BORDER COLOR, grey
 BORDER WIDTH, 2
 BORDER OPACITY, 1
-FILL COLOR, white, white, white, black,grey,forestgreen,seagreen,limegreen,olivedrab,mediumblue,dodgerblue,steelblue,red,maroon,mediumvioletred,darkorange,goldenrod,darkorchid
+FILL COLOR, white, white, white, black,grey,forestgreen,teal,limegreen,olivedrab,mediumblue,dodgerblue,steelblue,red,maroon,mediumvioletred,darkorange,goldenrod
 
 OPACITY, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 #FONT, Menlo,,
@@ -156,78 +156,78 @@ TEXT, none, black, D7 33, NL
 # Left Side Pins
 ANCHOR, 2145, 305
 PINSET, LEFT, PACKED, CENTER, CENTER, 120, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA3, Fm+, , , , , XDIR0, , SCL0|SCL0.1, "0,WO3", "1,WO", , , "0,OUT", XY3
-PIN, DIGITAL , IO, ,PIN_PA4, , , , , , TX0.1, MOSI0, , "0,WO4", , WOA, , , XY4
-PIN, DIGITAL , IO, ,PIN_PA5, , , , , , RX0.1, MISO0, , "0,WO5", , WOB, , , XY5
-PIN, DIGITAL , IO, ,PIN_PA6, , , , , , XCK0.1, SCK0, , , , WOC, , "0,OUT.1", XY6
-PIN, DIGITAL , IO, ,PIN_PA7, CLKOUT, , "0,OUT|1,OUT|2,OUT", , ZOUT0|ZOUT1|ZOUT2, XDIR0.1, SS0, , , , WOD, EoA.1, , XY7
+PIN, DIGITAL , IO, ,PIN_PA3, Fm+, , , , , XDIR0, , SCL0|SCL0.1, "0,WO3", "1,WO", , , "0,OUT"
+PIN, DIGITAL , IO, ,PIN_PA4, , , , , , TX0.1, MOSI0, , "0,WO4", , WOA, , 
+PIN, DIGITAL , IO, ,PIN_PA5, , , , , , RX0.1, MISO0, , "0,WO5", , WOB, , 
+PIN, DIGITAL , IO, ,PIN_PA6, , , , , , XCK0.1, SCK0, , , , WOC, , "0,OUT.1"
+PIN, DIGITAL , IO, ,PIN_PA7, CLKOUT, , "0,OUT|1,OUT|2,OUT", , ZOUT0|ZOUT1|ZOUT2, XDIR0.1, SS0, , , , WOD, EoA.1, 
 PINTEXT, POWER, IO, POWER , VDD , PowerPin,"1.8V-5.5V"
 PINTEXT, POWER, IO, POWER , GND, PowerPin, Ground,
-PIN, DIGITAL , IO, ,PIN_PB0, , , , , , TX3, , , "0,WO0.1|1,WO0", , , , "4,IN0", XY8
-PIN, DIGITAL , IO, ,PIN_PB1, , , , , , RX3, , , "0,WO1.1|1,WO1", , , , "4,IN1", XY9
-PIN, DIGITAL , IO, ,PIN_PB2, , , , , , XCK3, , SDA1.2|SDAs1, "0,WO2.1|1,WO2", , , EoB, "4,IN2", XY10
-PIN, DIGITAL , IO, ,PIN_PB3, , , , , , XDIR3, , SCL1.2|SCLs1, "0,WO3.1|1,WO3", , , , "4,OUT", XY11
-PIN, DIGITAL , IO, ,PIN_PB4, , , , , , TX3.1, MOSI1.2, , "0,WO4.1|1,WO4", "2,WO.1", WOA.1, , , XY12
-PIN, DIGITAL , IO, ,PIN_PB5, , , , , , RX3.1, MISO1.2, , "0,WO5.1|1,WO5", "3,WO", WOB.1, , , XY13
-PIN, DIGITAL , IO, ,PIN_PB6, , , , , , XCK3.1, SCK1.2, SDAs1.1|SDAs1.2, , , WOC.1, , "4,OUT.1", XY14
-PIN, DIGITAL , IO, ,PIN_PB7, , , , , , XDIR3.1, SS1.2, SCLs1.1|SCLs1.2, , , WOD.1, EoB.1, , XY15
-PIN, DIGITAL , IO, ,PIN_PC0, , , , , , TX1, MOSI1, , "0,WO0.2", "2,WO", , , "1,IN0", 
-PIN, DIGITAL , IO, ,PIN_PC1, , , , , , RX1, MISO1, , "0,WO1.2", "3,WO.1", , , "1,IN1", 
-PIN, DIGITAL , IO, ,PIN_PC2, Fm+, , , , , XCK1, SCK1, SDA0.2|SDAs0, "0,WO2.2", , , EoC, "1,IN2", 
-PIN, DIGITAL , IO, ,PIN_PC3, Fm+, , , , , XDIR1, SS1, SCL0.2|SCLs0, "0,WO3.2", , , , "1,OUT", 
+PIN, DIGITAL , IO, ,PIN_PB0, , , , , , TX3, , , "0,WO0.1|1,WO0", , , , "4,IN0"
+PIN, DIGITAL , IO, ,PIN_PB1, , , , , , RX3, , , "0,WO1.1|1,WO1", , , , "4,IN1"
+PIN, DIGITAL , IO, ,PIN_PB2, , , , , , XCK3, , SDA1.2|SDAs1, "0,WO2.1|1,WO2", , , EoB, "4,IN2"
+PIN, DIGITAL , IO, ,PIN_PB3, , , , , , XDIR3, , SCL1.2|SCLs1, "0,WO3.1|1,WO3", , , , "4,OUT"
+PIN, DIGITAL , IO, ,PIN_PB4, , , , , , TX3.1, MOSI1.2, , "0,WO4.1|1,WO4", "2,WO.1", WOA.1, , 
+PIN, DIGITAL , IO, ,PIN_PB5, , , , , , RX3.1, MISO1.2, , "0,WO5.1|1,WO5", "3,WO", WOB.1, , 
+PIN, DIGITAL , IO, ,PIN_PB6, , , , , , XCK3.1, SCK1.2, SDAs1.1|SDAs1.2, , , WOC.1, , "4,OUT.1"
+PIN, DIGITAL , IO, ,PIN_PB7, , , , , , XDIR3.1, SS1.2, SCLs1.1|SCLs1.2, , , WOD.1, EoB.1, 
+PIN, DIGITAL , IO, ,PIN_PC0, , , , , , TX1, MOSI1, , "0,WO0.2", "2,WO", , , "1,IN0"
+PIN, DIGITAL , IO, ,PIN_PC1, , , , , , RX1, MISO1, , "0,WO1.2", "3,WO.1", , , "1,IN1"
+PIN, DIGITAL , IO, ,PIN_PC2, Fm+, , , , , XCK1, SCK1, SDA0.2|SDAs0, "0,WO2.2", , , EoC, "1,IN2"
+PIN, DIGITAL , IO, ,PIN_PC3, Fm+, , , , , XDIR1, SS1, SCL0.2|SCLs0, "0,WO3.2", , , , "1,OUT"
 PINTEXT, POWER, IO, POWER , VDD , PowerPin,"1.8V-5.5V"
 PINTEXT, POWER, IO, POWER , GND, PowerPin, Ground,
-PIN, DIGITAL , IO, ,PIN_PC4, , , , , , TX1.1, MOSI1.1, , "0,WO4.2|1,WO0.1", , , , , 
-PIN, DIGITAL , IO, ,PIN_PC5, , , , , , RX1.1, MISO1.1, , "0,WO5.2|1,WO1.1", , , , , 
-PIN, DIGITAL , IO, ,PIN_PC6, , , "0,OUT.1|1,OUT.1|2,OUT.1", , , XCK1.1, SCK1.1, SDAs0.1|SDAs0.2, "1,WO2.1", "4,WO.1", , , "1,OUT.1", 
-PIN, DIGITAL , IO, ,PIN_PC7, , , , , ZOUT0.1|ZOUT1.1|ZOUT2.1, XDIR1.1, SS1.1, SCLs0.1|SCLs0.2, , , , EoC.1, , 
-PIN, DIGITAL , IO, ,PIN_PD0, , AIN0, "0,AINN1|1,AINN1|2,AINN1", , , , , , "0,WO0.3", , , , "2,IN0", XY16
-PIN, DIGITAL , IO, ,PIN_PD1, , AIN1, , , ZIN0, , , , "0,WO1.3", , , , "2,IN1", XY17
-PIN, DIGITAL , IO, ,PIN_PD2, , AIN2, "0,AINP0|1,AINP0|2,AINP0", , , , , , "0,WO2.3", , , EoD, "2,IN2", XY18
-PIN, DIGITAL , IO, ,PIN_PD3, , AIN3, "0,AINN0|1,AINP1", , , , , , "0,WO3.3", , , , "2,OUT", XY19
-PIN, DIGITAL , IO, ,PIN_PD4, , AIN4, "1,AINP2|2,AINP1", , , , , , "0,WO4.3", , , , , XY20
-PIN, DIGITAL , IO, ,PIN_PD5, , AIN5, "1,AINN0", , , , , , "0,WO5.3", , , , , XY21
-PIN, DIGITAL , IO, ,PIN_PD6, , AIN6, "0,AINP3|1,AINP3|2,AINP3", DACo, , , , , , , , , "2,OUT.1", XY22
+PIN, DIGITAL , IO, ,PIN_PC4, , , , , , TX1.1, MOSI1.1, , "0,WO4.2|1,WO0.1", , , , 
+PIN, DIGITAL , IO, ,PIN_PC5, , , , , , RX1.1, MISO1.1, , "0,WO5.2|1,WO1.1", , , , 
+PIN, DIGITAL , IO, ,PIN_PC6, , , "0,OUT.1|1,OUT.1|2,OUT.1", , , XCK1.1, SCK1.1, SDAs0.1|SDAs0.2, "1,WO2.1", "4,WO.1", , , "1,OUT.1"
+PIN, DIGITAL , IO, ,PIN_PC7, , , , , ZOUT0.1|ZOUT1.1|ZOUT2.1, XDIR1.1, SS1.1, SCLs0.1|SCLs0.2, , , , EoC.1, 
+PIN, DIGITAL , IO, ,PIN_PD0, , AIN0, "0,AINN1|1,AINN1|2,AINN1", , , , , , "0,WO0.3", , , , "2,IN0"
+PIN, DIGITAL , IO, ,PIN_PD1, , AIN1, , , ZIN0, , , , "0,WO1.3", , , , "2,IN1"
+PIN, DIGITAL , IO, ,PIN_PD2, , AIN2, "0,AINP0|1,AINP0|2,AINP0", , , , , , "0,WO2.3", , , EoD, "2,IN2"
+PIN, DIGITAL , IO, ,PIN_PD3, , AIN3, "0,AINN0|1,AINP1", , , , , , "0,WO3.3", , , , "2,OUT"
+PIN, DIGITAL , IO, ,PIN_PD4, , AIN4, "1,AINP2|2,AINP1", , , , , , "0,WO4.3", , , , 
+PIN, DIGITAL , IO, ,PIN_PD5, , AIN5, "1,AINN0", , , , , , "0,WO5.3", , , , 
+PIN, DIGITAL , IO, ,PIN_PD6, , AIN6, "0,AINP3|1,AINP3|2,AINP3", DACo, , , , , , , , , "2,OUT.1"
 
 # Right Side Pins
 ANCHOR, 2585, 305
 PINSET, RIGHT, PACKED, CENTER, CENTER, 120, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA2, Fm+, , , , , XCK0, , SDA0|SDA0.1, "0,WO2", "0,WO", , EoA, "0,IN2", XY2
-PIN, DIGITAL , IO, ,PIN_PA1, , , , , , RX0, , , "0,WO1", , , , "0,IN1", XY1
-PIN, DIGITAL , IO, ,PIN_PA0, EXTCLK, , , , , TX0, , , "0,WO0", , , , "0,IN0", XY0
-PIN, DIGITAL , IO, ,PIN_PG7, , , , , , XDIR5.1, SS0.2, , , , WOD.3, EoG.1, , XY47
-PIN, DIGITAL , IO, ,PIN_PG6, , , , , , XCK5.1, SCK0.2, , , , WOC.3, , "5,OUT.1", XY46
-PIN, DIGITAL , IO, ,PIN_PG5, , , , , , RX5.1, MISO0.2, , "0,WO5.6|1,WO5.3", , WOB.3, , , XY45
-PIN, DIGITAL , IO, ,PIN_PG4, , , , , , TX5.1, MOSI0.2, , "0,WO4.6|1,WO4.3", , WOA.3, , , XY44
+PIN, DIGITAL , IO, ,PIN_PA2, Fm+, , , , , XCK0, , SDA0|SDA0.1, "0,WO2", "0,WO", , EoA, "0,IN2"
+PIN, DIGITAL , IO, ,PIN_PA1, , , , , , RX0, , , "0,WO1", , , , "0,IN1"
+PIN, DIGITAL , IO, ,PIN_PA0, EXTCLK, , , , , TX0, , , "0,WO0", , , , "0,IN0"
+PIN, DIGITAL , IO, ,PIN_PG7, , , , , , XDIR5.1, SS0.2, , , , WOD.3, EoG.1, 
+PIN, DIGITAL , IO, ,PIN_PG6, , , , , , XCK5.1, SCK0.2, , , , WOC.3, , "5,OUT.1"
+PIN, DIGITAL , IO, ,PIN_PG5, , , , , , RX5.1, MISO0.2, , "0,WO5.6|1,WO5.3", , WOB.3, , 
+PIN, DIGITAL , IO, ,PIN_PG4, , , , , , TX5.1, MOSI0.2, , "0,WO4.6|1,WO4.3", , WOA.3, , 
 PINTEXT, POWER, IO, POWER , GND, PowerPin, Ground,
 PINTEXT, POWER, IO, POWER , VDD , PowerPin,"1.8V-5.5V"
-PIN, DIGITAL , IO, ,PIN_PG3, , , , , , XDIR5, , , "0,WO3.6|1,WO3.3", "4,WO", , , "5,OUT", XY43
-PIN, DIGITAL , IO, ,PIN_PG2, , , , , , XCK5, , , "0,WO2.6|1,WO2.3", , , EoG, "5,IN2", XY42
-PIN, DIGITAL , IO, ,PIN_PG1, , , , , , RX5, , , "0,WO1.6|1,WO1.3", , , , "5,IN1", XY41
-PIN, DIGITAL , IO, ,PIN_PG0, , , , , , TX5, , , "0,WO0.6|1,WO0.3", , , , "5,IN0", XY40
-PIN, DIGITAL , IO, ,PIN_UPDI, UPDI, , , , , , , , , , , , , 
-PIN, DIGITAL , IO, ,PIN_PF6, RESET, , , , , , , , , , , , , 
-PIN, DIGITAL , IO, ,PIN_PF5, , AIN21, , , , RX2.1, , , "0,WO5.5", "1,WO.1", , , , XY37
-PIN, DIGITAL , IO, ,PIN_PF4, , AIN20, , , , TX2.1, , , "0,WO4.5", "0,WO.1", , , , XY36
-PIN, DIGITAL , IO, ,PIN_PF3, Fm+, AIN19, , , , XDIR2, , SCL1|SCL1.1, "0,WO3.5", , WOD.2, , "3,OUT", XY35
-PIN, DIGITAL , IO, ,PIN_PF2, Fm+, AIN18, , , , XCK2, , SDA1|SDA1.1, "0,WO2.5", , WOC.2, EoF, "3,IN2", XY34
-PIN, DIGITAL , IO, ,PIN_PF1, XTAL32K2, AIN17, , , , RX2, , , "0,WO1.5", , WOB.2, , "3,IN1", XY33
-PIN, DIGITAL , IO, ,PIN_PF0, XTAL32K1, AIN16, , , , TX2, , , "0,WO0.5", , WOA.2, , "3,IN0", XY32
-PIN, DIGITAL , IO, ,PIN_PE7, , AIN15, , , ZIN2, XDIR4.1, , , , , , EoE.1, , XY31
-PIN, DIGITAL , IO, ,PIN_PE6, , AIN14, , , , XCK4.1, , , "1,WO2.2", , , , , XY30
-PIN, DIGITAL , IO, ,PIN_PE5, , AIN13, , , , RX4.1, , , "0,WO5.4|1,WO1.2", , , , , XY29
-PIN, DIGITAL , IO, ,PIN_PE4, , AIN12, , , , TX4.1, , , "0,WO4.4|1,WO0.2", , , , , XY28
-PIN, DIGITAL , IO, ,PIN_PE3, , AIN11, , , ZIN1, XDIR4, SS0.1, , "0,WO3.4", , , , , XY27
-PIN, DIGITAL , IO, ,PIN_PE2, , AIN10, "0,AINP2", , , XCK4, SCK0.1, , "0,WO2.4", , , EoE, , XY26
-PIN, DIGITAL , IO, ,PIN_PE1, , AIN9, "2,AINP2", , , RX4, MISO0.1, , "0,WO1.4", , , , , XY25
-PIN, DIGITAL , IO, ,PIN_PE0, , AIN8, "0,AINP1", , , TX4, MOSI0.1, , "0,WO0.4", , , , , XY24
+PIN, DIGITAL , IO, ,PIN_PG3, , , , , , XDIR5, , , "0,WO3.6|1,WO3.3", "4,WO", , , "5,OUT"
+PIN, DIGITAL , IO, ,PIN_PG2, , , , , , XCK5, , , "0,WO2.6|1,WO2.3", , , EoG, "5,IN2"
+PIN, DIGITAL , IO, ,PIN_PG1, , , , , , RX5, , , "0,WO1.6|1,WO1.3", , , , "5,IN1"
+PIN, DIGITAL , IO, ,PIN_PG0, , , , , , TX5, , , "0,WO0.6|1,WO0.3", , , , "5,IN0"
+PIN, DIGITAL , IO, ,PIN_UPDI, UPDI, , , , , , , , , , , , 
+PIN, DIGITAL , IO, ,PIN_PF6, RESET, , , , , , , , , , , , 
+PIN, DIGITAL , IO, ,PIN_PF5, , AIN21, , , , RX2.1, , , "0,WO5.5", "1,WO.1", , , 
+PIN, DIGITAL , IO, ,PIN_PF4, , AIN20, , , , TX2.1, , , "0,WO4.5", "0,WO.1", , , 
+PIN, DIGITAL , IO, ,PIN_PF3, Fm+, AIN19, , , , XDIR2, , SCL1|SCL1.1, "0,WO3.5", , WOD.2, , "3,OUT"
+PIN, DIGITAL , IO, ,PIN_PF2, Fm+, AIN18, , , , XCK2, , SDA1|SDA1.1, "0,WO2.5", , WOC.2, EoF, "3,IN2"
+PIN, DIGITAL , IO, ,PIN_PF1, XTAL32K2, AIN17, , , , RX2, , , "0,WO1.5", , WOB.2, , "3,IN1"
+PIN, DIGITAL , IO, ,PIN_PF0, XTAL32K1, AIN16, , , , TX2, , , "0,WO0.5", , WOA.2, , "3,IN0"
+PIN, DIGITAL , IO, ,PIN_PE7, , AIN15, , , ZIN2, XDIR4.1, , , , , , EoE.1, 
+PIN, DIGITAL , IO, ,PIN_PE6, , AIN14, , , , XCK4.1, , , "1,WO2.2", , , , 
+PIN, DIGITAL , IO, ,PIN_PE5, , AIN13, , , , RX4.1, , , "0,WO5.4|1,WO1.2", , , , 
+PIN, DIGITAL , IO, ,PIN_PE4, , AIN12, , , , TX4.1, , , "0,WO4.4|1,WO0.2", , , , 
+PIN, DIGITAL , IO, ,PIN_PE3, , AIN11, , , ZIN1, XDIR4, SS0.1, , "0,WO3.4", , , , 
+PIN, DIGITAL , IO, ,PIN_PE2, , AIN10, "0,AINP2", , , XCK4, SCK0.1, , "0,WO2.4", , , EoE, 
+PIN, DIGITAL , IO, ,PIN_PE1, , AIN9, "2,AINP2", , , RX4, MISO0.1, , "0,WO1.4", , , , 
+PIN, DIGITAL , IO, ,PIN_PE0, , AIN8, "0,AINP1", , , TX4, MOSI0.1, , "0,WO0.4", , , , 
 PINTEXT, POWER, IO, POWER , AGND, PowerPin, Analog Ground,
 PINTEXT, POWER, IO, POWER , AVDD , PowerPin,"1.8V-5.5V"
-PIN, DIGITAL , IO, ,PIN_PD7, VREFA, AIN7, "0,AINN2|1,AINN2|2,AINN0|2,AINN2", , , , , , , , , EoD.1, , XY23
+PIN, DIGITAL , IO, ,PIN_PD7, VREFA, AIN7, "0,AINN2|1,AINN2|2,AINN0|2,AINN2", , , , , , , , , EoD.1, 
 
 # legend
 ANCHOR, 800, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 120, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL, PTC
+PIN, NONE , NONE, ,Name, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
 MESSAGE, 800, 60, 120, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL
