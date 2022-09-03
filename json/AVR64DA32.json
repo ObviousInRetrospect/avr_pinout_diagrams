@@ -1,6 +1,7 @@
 {
     "cfg": {
         "chip": "AVR64DA32",
+        "shape": "square",
         "srcchip": "AVR64DA32 dfp.2.1.152",
         "titlechip": "AVRxxDA32"
     },
@@ -78,6 +79,9 @@
                 "EVSYS": [
                     "EoD"
                 ],
+                "IO": [
+                    "\u2293"
+                ],
                 "Name": "PD2",
                 "PIN": "12",
                 "TCA": [
@@ -142,6 +146,9 @@
                 ],
                 "DAC": [
                     "DACo"
+                ],
+                "IO": [
+                    "\u2293"
                 ],
                 "Name": "PD6",
                 "PIN": "16"
@@ -243,6 +250,9 @@
                 "EVSYS": [
                     "EoF"
                 ],
+                "IO": [
+                    "\u2293"
+                ],
                 "Name": "PF2",
                 "PIN": "22",
                 "Special": [
@@ -321,6 +331,9 @@
                 ]
             },
             "26": {
+                "IO": [
+                    "\u2293"
+                ],
                 "Name": "PF6",
                 "PIN": "26",
                 "Special": [
@@ -394,6 +407,9 @@
                 "EVSYS": [
                     "EoA"
                 ],
+                "IO": [
+                    "\u2293"
+                ],
                 "Name": "PA2",
                 "PIN": "32",
                 "Special": [
@@ -416,6 +432,9 @@
             "4": {
                 "CCL": [
                     "0,OUT.1"
+                ],
+                "IO": [
+                    "\u2293"
                 ],
                 "Name": "PA6",
                 "PIN": "4",
@@ -497,6 +516,9 @@
                 ],
                 "EVSYS": [
                     "EoC"
+                ],
+                "IO": [
+                    "\u2293"
                 ],
                 "Name": "PC2",
                 "PIN": "8",

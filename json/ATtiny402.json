@@ -1,7 +1,8 @@
 {
     "cfg": {
-        "bot_txt": "The notation RX.1 is alternate position so Serial.swap(). You must choose RX.1 and TX.1 or RX and TX together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\n{srcchip} Diagrams by ObviousInRetrospect.",
+        "bot_txt": "The notation RX.1 is alternate position so Serial.swap(). You must choose RX.1 and TX.1 or RX and TX together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\nIO \u2293: asynch pin. {srcchip} Diagrams by ObviousInRetrospect.",
         "chip": "ATtiny402",
+        "repo_txt": "github.com/SpenceKonde/\nmegaTinyCore",
         "srcchip": "ATtiny402 dfp.3.0.151",
         "titlechip": "ATtiny--02"
     },
@@ -20,6 +21,9 @@
                 ],
                 "CCL": [
                     "1,OUT"
+                ],
+                "IO": [
+                    "\u2293"
                 ],
                 "Name": "PA6",
                 "PIN": "2",
@@ -86,6 +90,9 @@
                 ],
                 "EVSYS": [
                     "Eo0"
+                ],
+                "IO": [
+                    "\u2293"
                 ],
                 "Name": "PA2",
                 "PIN": "5",

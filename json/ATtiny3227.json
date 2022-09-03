@@ -1,7 +1,9 @@
 {
     "cfg": {
-        "bot_txt": "The notation RX0.1 is alternate position so Serial.swap(). You must choose RX0.1 and TX0.1 or RX0 and TX0 together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\n{srcchip} Diagrams by ObviousInRetrospect.",
+        "bot_txt": "The notation RX0.1 is alternate position so Serial.swap(). You must choose RX0.1 and TX0.1 or RX0 and TX0 together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\nIO \u2293: asynch pin. {srcchip} Diagrams by ObviousInRetrospect.",
         "chip": "ATtiny3227",
+        "repo_txt": "github.com/SpenceKonde/\nmegaTinyCore",
+        "shape": "square",
         "srcchip": "ATtiny3227 dfp.3.0.151",
         "titlechip": "ATtiny--27"
     },
@@ -16,6 +18,9 @@
                 ],
                 "EVSYS": [
                     "EoA"
+                ],
+                "IO": [
+                    "\u2293"
                 ],
                 "Name": "PA2",
                 "PIN": "1",
@@ -33,6 +38,9 @@
                 ],
                 "CCL": [
                     "2,OUT.1"
+                ],
+                "IO": [
+                    "\u2293"
                 ],
                 "Name": "PB6",
                 "PIN": "10"
@@ -94,6 +102,9 @@
                 ],
                 "EVSYS": [
                     "EoB"
+                ],
+                "IO": [
+                    "\u2293"
                 ],
                 "Name": "PB2",
                 "PIN": "14",
@@ -196,6 +207,9 @@
                 ],
                 "EVSYS": [
                     "EoC"
+                ],
+                "IO": [
+                    "\u2293"
                 ],
                 "Name": "PC2",
                 "PIN": "19",
@@ -330,7 +344,8 @@
                     "WO4"
                 ],
                 "USART": [
-                    "XDIR1"
+                    "XDIR1",
+                    "XDIR0.1"
                 ]
             },
             "6": {
@@ -362,6 +377,9 @@
                 "ADC": [
                     "AIN6"
                 ],
+                "IO": [
+                    "\u2293"
+                ],
                 "Name": "PA6",
                 "PIN": "7"
             },
@@ -380,9 +398,7 @@
                 ],
                 "Name": "PA7",
                 "PIN": "8",
-                "USART": [
-                    "XDIR0.1"
-                ]
+                "USART": []
             },
             "9": {
                 "EVSYS": [

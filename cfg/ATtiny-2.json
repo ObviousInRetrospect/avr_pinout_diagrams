@@ -5,10 +5,28 @@
             "Special": [
                 "VREFA"
             ]
+        },
+        "PA4": {
+            "USART": [
+                "XDIR0.1"
+            ]
+        }
+    },
+    "del": {
+        "PA7": {
+            "USART": [
+                "XDIR0.1"
+            ]
+        }
+    },
+    "add_re_pad": {
+        "P[A-H][26]": {
+            "IO":["⊓"]
         }
     },
     "cfg":
     {
-        "bot_txt" : "The notation RX0.1 is alternate position so Serial.swap(). You must choose RX0.1 and TX0.1 or RX0 and TX0 together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\n{srcchip} Diagrams by ObviousInRetrospect."
+        "bot_txt" : "The notation RX0.1 is alternate position so Serial.swap(). You must choose RX0.1 and TX0.1 or RX0 and TX0 together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\nIO ⊓: asynch pin. {srcchip} Diagrams by ObviousInRetrospect.",
+        "repo_txt": "github.com/SpenceKonde/\nmegaTinyCore"
     }
 }

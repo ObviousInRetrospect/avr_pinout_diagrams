@@ -1,6 +1,7 @@
 {
     "cfg": {
         "chip": "AVR64DD32",
+        "shape": "square",
         "srcchip": "AVR64DD32 dfp.2.1.152",
         "titlechip": "AVRxxDD32"
     },
