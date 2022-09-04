@@ -63,7 +63,7 @@ BOX, PAGE BORDER, 0,0, 100%, 100%
 
 # Draw Title
 MESSAGE, 1475, 450, 175, Heading, 144, CENTER, TOP
-TEXT, black,black,ATtiny--06-10x2,NL
+TEXT, black,black,"ATtiny--06-10x2",NL
 
 
 # draw chip outline
@@ -140,6 +140,12 @@ PIN, DIGITAL , IO, ,PIN_PB0, , , AIN11, , XDIR, , SCL, WO0, , ,
 # legend
 ANCHOR, 800, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
+TEXT, none, black, Legend, NL
+
+ANCHOR, 800+1000, 10
+PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
+PIN, NONE , NO_TRIANGLE, ,,
 MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL

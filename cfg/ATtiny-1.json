@@ -8,7 +8,14 @@
                     ]
                 }
             }
-        }
+        },
+        "ATtiny412": { "cfg": { "chips":["ATtiny412","ATtiny212"] } },
+        "ATtiny814": { "cfg": { "chips":["ATtiny814","ATtiny414","ATtiny214"] } },
+        "ATtiny816": { "cfg": { "chips":["ATtiny816","ATtiny416"] } },
+        "ATtiny817": { "cfg": { "chips":["ATtiny817","ATtiny417"] } },
+        "ATtiny1614": { "cfg": { "chips":["ATtiny1614"] } },
+        "ATtiny1616": { "cfg": { "chips":["ATtiny3216","ATtiny1616"] } },
+        "ATtiny3217": { "cfg": { "chips":["ATtiny3217","ATtiny1617"] } }
     },
     "add_re_pad": {
         "P[A-H][26]": {

@@ -63,13 +63,11 @@ BOX, PAGE BORDER, 0,0, 100%, 100%
 
 # Draw Title
 MESSAGE, 1680, 450, 175, Heading, 144, CENTER, TOP
-TEXT, black,black,AVRxxDD20-QFN,NL
+TEXT, black,black,"AVRxxDD20-QFN",NL
 
 
 # draw chip outline
 CHIP45, CHIP BOX, 1348, 833, 804, 804, , TOP,
-MESSAGE, 1398, 570, 100, Name, 48, LEFT, TOP
-TEXT, none, black, AVRxxDD20, NL
 MESSAGE, 50, 2292, 48, Name, 48, LEFT, TOP
 TEXT, none, black, "SPI.3 signals appearing on IO Multiplexing table in datasheet (PA0:MOSI.3, PA1:MISO.3, PC1:SS.3) are incorrect, per MCP case #01057955", NL
 TEXT, none, black, "The notation SDA.3 means Wire.swap(3). You must choose SDA.3 and SCL.3 or SDA.2 and SCL.2 together. Each peripheral can have only", NL
@@ -99,7 +97,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA7, , CLKOUT, AIN27±, OUT, , ZOUT, XDIR0.1, SS, , , , , , 
 ANCHOR, 1350, 1030
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , WOD, EoA.1, 
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , , WOD, EoA.1, 
 MESSAGE, 1265, 1185, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 5, NL
 ANCHOR, 1225, 1105
@@ -107,7 +105,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PC1, , , AIN29±, , , , RX1|TX0.4, MISO.5|MOSI.6, , , , , , 
 ANCHOR, 1225, 1155
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , WO1.2, , , , "1,IN1|1,IN1.1"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , WO1.2, , , , "1,IN1|1,IN1.1"
 MESSAGE, 1300, 1230, 125, Name, 120, LEFT, TOP
 TEXT, none, black, AVRxxDD20-QFN, NL
 MESSAGE, 1350, 1320, 40, Name, 40, LEFT, TOP
@@ -121,7 +119,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PC2, , Fm+, AIN30±, AINN3, , ZIN, RX0.4|XCK1, MISO.6, , , , , , 
 ANCHOR, 1225, 1280
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , SCK.5, SDA.2|SDAs|SDAs.3, WO2.2, , , EoC, "1,IN2|1,IN2.1"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , SCK.5, SDA.2|SDAs|SDAs.3, WO2.2, , , EoC, "1,IN2|1,IN2.1"
 MESSAGE, 1350, 1375, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 7, NL
 ANCHOR, 1350, 1355
@@ -129,7 +127,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PC3, , Fm+, AIN31±, AINP4, , , XCK0.4|XDIR1, SCK.6, , , , , , 
 ANCHOR, 1350, 1405
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , SS.5, SCL.2|SCLs|SCLs.3, WO3.2, , , , "1,OUT"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , SS.5, SCL.2|SCLs|SCLs.3, WO3.2, , , , "1,OUT"
 MESSAGE, 1475, 1500, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 8, NL
 ANCHOR, 1475, 1480
@@ -155,7 +153,7 @@ PIN, DIGITAL , IO, ,PIN_PA3, , Fm+, AIN23±, , , , RX0.2|XDIR0, , SCL|SCL.1, WO3
 # Right Side Pins
 ANCHOR, 1779, 655
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , , "0,OUT"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , , , , "0,OUT"
 
 # Right Side Pins
 ANCHOR, 1779, 730
@@ -169,7 +167,7 @@ PIN, DIGITAL , IO, ,PIN_PA2, , Fm+, AIN22±, , , , TX0.2|XCK0, , SDA|SDA.1, , , 
 # Right Side Pins
 ANCHOR, 1904, 780
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , WO2, "0,WO", , EoA, "0,IN2|0,IN2.1"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , WO2, "0,WO", , EoA, "0,IN2|0,IN2.1"
 
 # Right Side Pins
 ANCHOR, 1904, 855
@@ -183,7 +181,7 @@ PIN, DIGITAL , IO, ,PIN_PA1, , XTAL32K2.1|XTALHF2, , , , , RX0, , SCL.3, WO1, , 
 # Right Side Pins
 ANCHOR, 2029, 905
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , , "0,IN1.1"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , , , , "0,IN1.1"
 
 # Right Side Pins
 ANCHOR, 2029, 980
@@ -197,7 +195,7 @@ PIN, DIGITAL , IO, ,PIN_PA0, , EXTCLK|XTAL32K1.1|XTALHF1, , , , , TX0, , SDA.3, 
 # Right Side Pins
 ANCHOR, 2154, 1030
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , WO0, , , , "0,IN0|0,IN0.1"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , WO0, , , , "0,IN0|0,IN0.1"
 
 # Right Side Pins
 ANCHOR, 2154, 1105
@@ -236,6 +234,12 @@ PIN, DIGITAL , IO, ,PIN_PD6, , , AIN6±, AINP3, DACo, , TX1.2|XCK0.3, SCK.4, , ,
 # legend
 ANCHOR, 500, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, IO, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
+MESSAGE, 500, 60, 125, Name, 72, RIGHT, TOP
+TEXT, none, black, Legend, NL
+
+ANCHOR, 500+1000, 10
+PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
+PIN, NONE , NO_TRIANGLE, ,,
 MESSAGE, 500, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL

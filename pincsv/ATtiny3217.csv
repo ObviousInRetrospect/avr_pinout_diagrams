@@ -63,13 +63,11 @@ BOX, PAGE BORDER, 0,0, 100%, 100%
 
 # Draw Title
 MESSAGE, 1565, 350, 175, Heading, 144, CENTER, TOP
-TEXT, black,black,ATtiny--17,NL
+TEXT, black,black,"ATtiny3217 / ATtiny1617",NL
 
 
 # draw chip outline
 CHIP45, CHIP BOX, 1159, 770, 981, 981, , TOP,
-MESSAGE, 1209, 470, 100, Name, 48, LEFT, TOP
-TEXT, none, black, ATtiny--17, NL
 MESSAGE, 50, 2340, 48, Name, 48, LEFT, TOP
 TEXT, none, black, "The notation RX.1 is alternate position so Serial.swap(). You must choose RX.1 and TX.1 or RX and TX together (exception: TCA).", NL
 TEXT, none, black, "Signals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).", NL
@@ -103,7 +101,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA4, , , "0,AIN4|1,AIN0", , , XDIR.1, SS, , WO4, , , , 
 ANCHOR, 1110, 1055
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , WOA, , "0,OUT"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , WOA, , "0,OUT"
 MESSAGE, 1029, 1218, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 6, NL
 ANCHOR, 985, 1130
@@ -111,7 +109,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA5, , VREFA, "0,AIN5|1,AIN1", "0,OUT", , , , , , , , , 
 ANCHOR, 985, 1180
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , "1,AINN0", , , , , WO5, "0,WO", WOB, , 
+PIN, NONE , NO_TRIANGLE, ,, , , , "1,AINN0", , , , , WO5, "0,WO", WOB, , 
 MESSAGE, 1285, 1255, 125, Name, 144, LEFT, TOP
 TEXT, none, black, ATtiny--17, NL
 MESSAGE, 1185, 1363, 48, Name, 48, LEFT, TOP
@@ -125,7 +123,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA6, ⊓, , "0,AIN6|1,AIN2", "0,AINN0", , , , , , , , , 
 ANCHOR, 985, 1305
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , "1,AINP1|2,AINP0", DACo, , , , , , , , 
+PIN, NONE , NO_TRIANGLE, ,, , , , "1,AINP1|2,AINP0", DACo, , , , , , , , 
 MESSAGE, 1154, 1424, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 8, NL
 ANCHOR, 1110, 1380
@@ -133,7 +131,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA7, , , "0,AIN7|1,AIN3", "0,AINP0|1,AINP0|2,AINN0", , , , , , , , , 
 ANCHOR, 1110, 1430
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , "1,OUT"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , , , "1,OUT"
 MESSAGE, 1279, 1549, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 9, NL
 ANCHOR, 1235, 1505
@@ -219,6 +217,12 @@ PIN, DIGITAL , IO, ,PIN_PB3, , TOSC1, , "1,OUT", , RX, , , WO0.1, , , ,
 # legend
 ANCHOR, 600, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, IO, Special, ADC, AC, DAC, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, DAC, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
+MESSAGE, 600, 60, 125, Name, 72, RIGHT, TOP
+TEXT, none, black, Legend, NL
+
+ANCHOR, 600+1000, 10
+PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
+PIN, NONE , NO_TRIANGLE, ,,
 MESSAGE, 600, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL

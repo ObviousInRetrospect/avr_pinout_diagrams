@@ -2,6 +2,14 @@
     "cfg": {
         "bot_txt": "The notation RX.1 is alternate position so Serial.swap(). You must choose RX.1 and TX.1 or RX and TX together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\nIO \u2293: asynch pin. {srcchip} Diagrams by ObviousInRetrospect.",
         "chip": "ATtiny1616",
+        "chips": [
+            "ATtiny3216",
+            "ATtiny1616"
+        ],
+        "comment": "the 3216 is soic-only as of 9/4/2022",
+        "notchips": [
+            "ATtiny3216"
+        ],
         "repo_txt": "github.com/SpenceKonde/\nmegaTinyCore",
         "shape": "square",
         "srcchip": "ATtiny1616 dfp.3.0.151",

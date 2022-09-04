@@ -63,13 +63,11 @@ BOX, PAGE BORDER, 0,0, 100%, 100%
 
 # Draw Title
 MESSAGE, 1580, 450, 175, Heading, 144, CENTER, TOP
-TEXT, black,black,ATtiny--06-QFN,NL
+TEXT, black,black,"ATtiny--06-QFN",NL
 
 
 # draw chip outline
 CHIP45, CHIP BOX, 1248, 833, 804, 804, , TOP,
-MESSAGE, 1298, 570, 100, Name, 48, LEFT, TOP
-TEXT, none, black, ATtiny--06, NL
 MESSAGE, 50, 2340, 48, Name, 48, LEFT, TOP
 TEXT, none, black, "The notation RX.1 is alternate position so Serial.swap(). You must choose RX.1 and TX.1 or RX and TX together (exception: TCA).", NL
 TEXT, none, black, "Signals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).", NL
@@ -187,6 +185,12 @@ PIN, DIGITAL , IO, ,PIN_PB3, , TOSC1, , , RX, , , WO0.1, , ,
 # legend
 ANCHOR, 800, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
+TEXT, none, black, Legend, NL
+
+ANCHOR, 800+1000, 10
+PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
+PIN, NONE , NO_TRIANGLE, ,,
 MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL

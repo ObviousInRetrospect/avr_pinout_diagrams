@@ -48,7 +48,11 @@
                 "8": "PA7",
                 "9": "PB5"
             },
-            "cfg":{"shape": "square"}
+            "cfg": {
+                "shape": "square",
+                "notchips": ["ATtiny3216"],
+                "comment": "the 3216 is soic-only as of 9/4/2022"
+            }
         }
     }
 }

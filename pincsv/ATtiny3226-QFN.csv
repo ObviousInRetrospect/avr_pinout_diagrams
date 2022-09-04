@@ -63,13 +63,11 @@ BOX, PAGE BORDER, 0,0, 100%, 100%
 
 # Draw Title
 MESSAGE, 1580, 450, 175, Heading, 144, CENTER, TOP
-TEXT, black,black,ATtiny--26-QFN,NL
+TEXT, black,black,"ATtiny--26-QFN",NL
 
 
 # draw chip outline
 CHIP45, CHIP BOX, 1248, 833, 804, 804, , TOP,
-MESSAGE, 1298, 570, 100, Name, 48, LEFT, TOP
-TEXT, none, black, ATtiny--26, NL
 MESSAGE, 50, 2340, 48, Name, 48, LEFT, TOP
 TEXT, none, black, "The notation RX0.1 is alternate position so Serial.swap(). You must choose RX0.1 and TX0.1 or RX0 and TX0 together (exception: TCA).", NL
 TEXT, none, black, "Signals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).", NL
@@ -88,7 +86,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA3, , CLKI, AIN3±, , XCK0.1|XCK1, SCK, , WO3, , , 
 ANCHOR, 1500, 780
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , "1,WO", , 
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , "1,WO", , 
 MESSAGE, 1415, 935, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 3, NL
 ANCHOR, 1375, 855
@@ -106,7 +104,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA4, , , AIN4±, , XDIR0.1|XDIR1, SS, , WO4, , , 
 ANCHOR, 1125, 1155
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , "0,OUT"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , "0,OUT"
 MESSAGE, 1200, 1230, 125, Name, 120, LEFT, TOP
 TEXT, none, black, ATtiny--26-QFN, NL
 MESSAGE, 1250, 1320, 40, Name, 40, LEFT, TOP
@@ -120,7 +118,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA5, , VREFA, AIN5±, OUT, , , , WO5, "0,WO", , 
 ANCHOR, 1125, 1280
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , "3,OUT.1"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , "3,OUT.1"
 MESSAGE, 1250, 1375, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 7, NL
 ANCHOR, 1250, 1355
@@ -196,6 +194,12 @@ PIN, DIGITAL , IO, ,PIN_PB3, , TOSC1, , , RX0, , , WO0.1, , , "2,OUT"
 # legend
 ANCHOR, 800, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
+TEXT, none, black, Legend, NL
+
+ANCHOR, 800+1000, 10
+PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
+PIN, NONE , NO_TRIANGLE, ,,
 MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL

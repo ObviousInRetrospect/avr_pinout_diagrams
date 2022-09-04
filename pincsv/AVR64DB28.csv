@@ -45,6 +45,7 @@ BOX, PAGE BORDER, black, 1, white, 1, 1, 100,100,0,0,0,0
 #BOX, PAGE BORDER, white, 1, white, 1, 1, 100,100,0,0,0,0
 BOX, DETAIL BOX, darkblue, 1, white, 0, 3, 250, 200, 15,15,0,0
 BOX, CHIP BOX, black, 1, white, 0, 10, 250, 200, 15,15,0,0
+BOX, CLINE BOX, black, 1, white, 0, 1, 250, 200, 15,15,0,0
 
 TEXT FONT, PowerPin, Dejavu Sans, 25, , black, normal, bold, normal
 #TEXT FONT, Heading, BenchNine, 50, , black, normal, 700, normal
@@ -61,8 +62,8 @@ GOOGLEFONT,"https://fonts.googleapis.com/css?family=M+PLUS+1+Code:300,400,700|Mo
 BOX, PAGE BORDER, 0,0, 100%, 100%
 
 # Draw Title
-MESSAGE, 1675, 250, 175, Heading, 144, CENTER, TOP
-TEXT, black,black,AVRxxDB28,NL
+MESSAGE, 1475, 250, 175, Heading, 144, CENTER, TOP
+TEXT, black,black,"AVRxxDB28",NL
 
 
 # draw chip outline
@@ -71,13 +72,11 @@ MESSAGE, 1525, 370, 100, Name, 48, LEFT, TOP
 TEXT, none, black, AVRxxDB28, NL
 MESSAGE, 1485, 2170, 40, Name, 28, LEFT, TOP
 TEXT, none, black, github.com/SpenceKonde/, NL
-MESSAGE, 1485, 2210, 40, Name, 40, LEFT, TOP
-TEXT, none, black, DxCore, NL
-TEXT, none, black, , NL
-MESSAGE, 1310, 2270, 40, Name, 36, LEFT, TOP
-TEXT, none, black,"False" , NL
-#MESSAGE, 50, 2310, 40, Name, 36, LEFT, TOP
-MESSAGE, 50, 2340, 48, Name, 48, LEFT, TOP
+    MESSAGE, 1485, 2210, 40, Name, 40, LEFT, TOP
+    TEXT, none, black, DxCore, NL
+    TEXT, none, black, , NL
+    #MESSAGE, 50, 2310, 40, Name, 36, LEFT, TOP
+    MESSAGE, 50, 2340, 48, Name, 48, LEFT, TOP
 TEXT, none, black, "The notation SDA.3 means Wire.swap(3). You must choose SDA.3 and SCL.3 or SDA.2 and SCL.2 together. Each peripheral can have only", NL
 TEXT, none, black, " one swap position set. Signals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1). ", NL
 TEXT, none, black, "The notation SDAs.3/SCLs.3 is where the slave pins are in dual mode. Data from AVR64DB28 dfp.2.1.152. Diagrams by ObviousInRetrospect.", NL
@@ -101,8 +100,8 @@ TEXT, none, black, 13 D7, NL
 TEXT, none, black, 14 +, NL
 
 
-MESSAGE, 1825, 450, 125, Name, 48, RIGHT, TOP
-TEXT, none, black, A6 28, NL
+    MESSAGE, 1825, 450, 125, Name, 48, RIGHT, TOP
+    TEXT, none, black, A6 28, NL
 TEXT, none, black, A5 27, NL
 TEXT, none, black, A4 26, NL
 TEXT, none, black, A3 25, NL
@@ -125,7 +124,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA7, , CLKOUT, , "0,OUT|1,OUT|2,OUT", , ZOUT, , XDIR0.1, , , , , , , 
 ANCHOR, 1445, 455
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , SS0, , , , WOD, EoA.1, 
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , SS0, , , , WOD, EoA.1, 
 ANCHOR, 1445, 530
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PC0, , , , , , , , TX1, MOSI1, , WO0.2, "2,WO", , , "1,IN0"
@@ -133,36 +132,36 @@ PIN, DIGITAL , IO, ,PIN_PC1, , , , , , , , RX1, MISO1, , WO1.2, , , , "1,IN1"
 PIN, DIGITAL , IO, ,PIN_PC2, ⊓, Fm+, , , , , , XCK1, SCK1, SDA.2|SDAs, , , , , 
 ANCHOR, 1445, 830
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , WO2.2, , , EoC, "1,IN2"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , WO2.2, , , EoC, "1,IN2"
 ANCHOR, 1445, 905
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PC3, , Fm+, , , , , , XDIR1, SS1, SCL.2|SCLs, WO3.2, , , , 
 ANCHOR, 1445, 955
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , , , "1,OUT"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , , , , , "1,OUT"
 ANCHOR, 1445, 1030
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PINTEXT, POWER, IO, POWER , VDDIO2 , PowerPin,"1.8V-5.5V"
-PIN, DIGITAL , IO, ,PIN_PD1, , , AIN1, , , ZIN, OP0INP, , , , WO1.3, , , , "2,IN1"
-PIN, DIGITAL , IO, ,PIN_PD2, ⊓, , AIN2, "0,AINP0|1,AINP0|2,AINP0", , , OP0OUT, , , , , , , , 
+PIN, DIGITAL , IO, ,PIN_PD1, , , AIN1±, , , ZIN, OP0INP, , , , WO1.3, , , , "2,IN1"
+PIN, DIGITAL , IO, ,PIN_PD2, ⊓, , AIN2±, "0,AINP0|1,AINP0|2,AINP0", , , OP0OUT, , , , , , , , 
 ANCHOR, 1445, 1330
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , WO2.3, , , EoD, "2,IN2"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , WO2.3, , , EoD, "2,IN2"
 ANCHOR, 1445, 1405
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PD3, , , AIN3, "0,AINN0|1,AINP1", , , OP0INN, , , , WO3.3, , , , "2,OUT"
-PIN, DIGITAL , IO, ,PIN_PD4, , , AIN4, "1,AINP2|2,AINP1", , , OP1INP, , , , WO4.3, , , , 
-PIN, DIGITAL , IO, ,PIN_PD5, , , AIN5, "1,AINN0", , , OP1OUT, , , , WO5.3, , , , 
-PIN, DIGITAL , IO, ,PIN_PD6, ⊓, , AIN6, "0,AINP3|1,AINP3|2,AINP3", DACo, , , , , , , , , , 
+PIN, DIGITAL , IO, ,PIN_PD3, , , AIN3±, "0,AINN0|1,AINP1", , , OP0INN, , , , WO3.3, , , , "2,OUT"
+PIN, DIGITAL , IO, ,PIN_PD4, , , AIN4±, "1,AINP2|2,AINP1", , , OP1INP, , , , WO4.3, , , , 
+PIN, DIGITAL , IO, ,PIN_PD5, , , AIN5±, "1,AINN0", , , OP1OUT, , , , WO5.3, , , , 
+PIN, DIGITAL , IO, ,PIN_PD6, ⊓, , AIN6±, "0,AINP3|1,AINP3|2,AINP3", DACo, , , , , , , , , , 
 ANCHOR, 1445, 1830
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , , , "2,OUT.1"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , , , , , "2,OUT.1"
 ANCHOR, 1445, 1905
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PD7, , VREFA, AIN7, "0,AINN2|1,AINN2|2,AINN0|2,AINN2", , , , , , , , , , , 
+PIN, DIGITAL , IO, ,PIN_PD7, , VREFA, AIN7±, "0,AINN2|1,AINN2|2,AINN0|2,AINN2", , , , , , , , , , , 
 ANCHOR, 1445, 1955
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , OP1INN, , , , , , , EoD.1, 
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , OP1INN, , , , , , , EoD.1, 
 ANCHOR, 1445, 2030
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PINTEXT, POWER, IO, POWER , AVDD , PowerPin,"1.8V-5.5V"
@@ -177,7 +176,7 @@ PIN, DIGITAL , IO, ,PIN_PA3, , Fm+, , , , , , XDIR0, , SCL|SCL.1, WO3, "1,WO", ,
 # Right Side Pins
 ANCHOR, 1885, 830
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , , , , "0,OUT"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , , , , , "0,OUT"
 
 # Right Side Pins
 ANCHOR, 1885, 905
@@ -187,7 +186,7 @@ PIN, DIGITAL , IO, ,PIN_PA2, ⊓, Fm+, , , , , , XCK0, , SDA|SDA.1, WO2, , , ,
 # Right Side Pins
 ANCHOR, 1885, 955
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , , "0,WO", , EoA, "0,IN2"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , , "0,WO", , EoA, "0,IN2"
 
 # Right Side Pins
 ANCHOR, 1885, 1030
@@ -205,6 +204,12 @@ PINTEXT, POWER, IO, POWER , AGND, PowerPin, Analog Ground,
 # legend
 ANCHOR, 400, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, IO, Special, ADC, AC, DAC, ZCD, OPAMP, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, DAC, ZCD, OPAMP, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
+MESSAGE, 400, 60, 125, Name, 72, RIGHT, TOP
+TEXT, none, black, Legend, NL
+
+ANCHOR, 400+1000, 10
+PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
+PIN, NONE , NO_TRIANGLE, ,,
 MESSAGE, 400, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL

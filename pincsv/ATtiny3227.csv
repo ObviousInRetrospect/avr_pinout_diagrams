@@ -63,13 +63,11 @@ BOX, PAGE BORDER, 0,0, 100%, 100%
 
 # Draw Title
 MESSAGE, 1565, 350, 175, Heading, 144, CENTER, TOP
-TEXT, black,black,ATtiny--27,NL
+TEXT, black,black,"ATtiny--27",NL
 
 
 # draw chip outline
 CHIP45, CHIP BOX, 1159, 770, 981, 981, , TOP,
-MESSAGE, 1209, 470, 100, Name, 48, LEFT, TOP
-TEXT, none, black, ATtiny--27, NL
 MESSAGE, 50, 2340, 48, Name, 48, LEFT, TOP
 TEXT, none, black, "The notation RX0.1 is alternate position so Serial.swap(). You must choose RX0.1 and TX0.1 or RX0 and TX0 together (exception: TCA).", NL
 TEXT, none, black, "Signals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).", NL
@@ -103,7 +101,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA4, , , AIN4±, , XDIR0.1|XDIR1, SS, , WO4, , , 
 ANCHOR, 1110, 1055
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , "0,OUT"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , "0,OUT"
 MESSAGE, 1029, 1218, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 6, NL
 ANCHOR, 985, 1130
@@ -111,7 +109,7 @@ PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PIN, DIGITAL , IO, ,PIN_PA5, , VREFA, AIN5±, OUT, , , , WO5, , , 
 ANCHOR, 985, 1180
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , "0,WO", , "3,OUT.1"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , "0,WO", , "3,OUT.1"
 MESSAGE, 1285, 1255, 125, Name, 144, LEFT, TOP
 TEXT, none, black, ATtiny--27, NL
 MESSAGE, 1185, 1363, 48, Name, 48, LEFT, TOP
@@ -183,7 +181,7 @@ PIN, DIGITAL , IO, ,PIN_PC2, ⊓, , AIN14, , TX1.1, MOSI.1, , , , ,
 # Right Side Pins
 ANCHOR, 2319, 1180
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , EoC, "3,IN2"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , EoC, "3,IN2"
 
 # Right Side Pins
 ANCHOR, 2319, 1255
@@ -197,7 +195,7 @@ PIN, DIGITAL , IO, ,PIN_PC1, , , AIN13, , RX1.1, MISO.1, , , , , "1,OUT.1"
 # Right Side Pins
 ANCHOR, 2319, 1305
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , "3,IN1"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , "3,IN1"
 
 # Right Side Pins
 ANCHOR, 2319, 1380
@@ -231,6 +229,12 @@ PIN, DIGITAL , IO, ,PIN_PB3, , TOSC1, , , RX0, , , WO0.1, , , "2,OUT"
 # legend
 ANCHOR, 800, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
+TEXT, none, black, Legend, NL
+
+ANCHOR, 800+1000, 10
+PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
+PIN, NONE , NO_TRIANGLE, ,,
 MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL

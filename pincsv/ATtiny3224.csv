@@ -45,6 +45,7 @@ BOX, PAGE BORDER, black, 1, white, 1, 1, 100,100,0,0,0,0
 #BOX, PAGE BORDER, white, 1, white, 1, 1, 100,100,0,0,0,0
 BOX, DETAIL BOX, darkblue, 1, white, 0, 3, 250, 200, 15,15,0,0
 BOX, CHIP BOX, black, 1, white, 0, 10, 250, 200, 15,15,0,0
+BOX, CLINE BOX, black, 1, white, 0, 1, 250, 200, 15,15,0,0
 
 TEXT FONT, PowerPin, Dejavu Sans, 25, , black, normal, bold, normal
 #TEXT FONT, Heading, BenchNine, 50, , black, normal, 700, normal
@@ -61,8 +62,8 @@ GOOGLEFONT,"https://fonts.googleapis.com/css?family=M+PLUS+1+Code:300,400,700|Mo
 BOX, PAGE BORDER, 0,0, 100%, 100%
 
 # Draw Title
-MESSAGE, 1675, 600, 175, Heading, 144, CENTER, TOP
-TEXT, black,black,ATtiny--24,NL
+MESSAGE, 1475, 600, 175, Heading, 144, CENTER, TOP
+TEXT, black,black,"ATtiny--24",NL
 
 
 # draw chip outline
@@ -71,13 +72,11 @@ MESSAGE, 1525, 720, 100, Name, 48, LEFT, TOP
 TEXT, none, black, ATtiny--24, NL
 MESSAGE, 1485, 1645, 40, Name, 28, LEFT, TOP
 TEXT, none, black, github.com/SpenceKonde/, NL
-MESSAGE, 1485, 1685, 40, Name, 40, LEFT, TOP
-TEXT, none, black, megaTinyCore, NL
-TEXT, none, black, , NL
-MESSAGE, 1310, 1745, 40, Name, 36, LEFT, TOP
-TEXT, none, black,"False" , NL
-#MESSAGE, 50, 1785, 40, Name, 36, LEFT, TOP
-MESSAGE, 50, 2340, 48, Name, 48, LEFT, TOP
+    MESSAGE, 1485, 1685, 40, Name, 40, LEFT, TOP
+    TEXT, none, black, megaTinyCore, NL
+    TEXT, none, black, , NL
+    #MESSAGE, 50, 1785, 40, Name, 36, LEFT, TOP
+    MESSAGE, 50, 2340, 48, Name, 48, LEFT, TOP
 TEXT, none, black, "The notation RX0.1 is alternate position so Serial.swap(). You must choose RX0.1 and TX0.1 or RX0 and TX0 together (exception: TCA).", NL
 TEXT, none, black, "Signals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).", NL
 TEXT, none, black, "IO ⊓: asynch pin.  Data from ATtiny3224 dfp.3.0.151. Diagrams by ObviousInRetrospect.", NL
@@ -94,8 +93,8 @@ TEXT, none, black, 6 B3, NL
 TEXT, none, black, 7 B2, NL
 
 
-MESSAGE, 1825, 800, 125, Name, 48, RIGHT, TOP
-TEXT, none, black, ⏚ 14, NL
+    MESSAGE, 1825, 800, 125, Name, 48, RIGHT, TOP
+    TEXT, none, black, ⏚ 14, NL
 TEXT, none, black, A3 13, NL
 TEXT, none, black, A2 12, NL
 TEXT, none, black, A1 11, NL
@@ -109,37 +108,37 @@ TEXT, none, black, B1 8, NL
 ANCHOR, 1445, 755
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PINTEXT, POWER, IO, POWER , VCC , PowerPin,"1.8V-5.5V"
-PIN, DIGITAL , IO, ,PIN_PA4, , , AIN4, , XDIR0.1|XDIR1, SS, , WO4, , , "0,OUT"
-PIN, DIGITAL , IO, ,PIN_PA5, , VREFA, AIN5, OUT, , , , WO5, "0,WO", , "3,OUT.1"
-PIN, DIGITAL , IO, ,PIN_PA6, ⊓, , AIN6, AINN0, , , , , , , 
-PIN, DIGITAL , IO, ,PIN_PA7, , , AIN7, AINP0, , , , , , EoA.1, "1,OUT"
+PIN, DIGITAL , IO, ,PIN_PA4, , , AIN4±, , XDIR0.1|XDIR1, SS, , WO4, , , "0,OUT"
+PIN, DIGITAL , IO, ,PIN_PA5, , VREFA, AIN5±, OUT, , , , WO5, "0,WO", , "3,OUT.1"
+PIN, DIGITAL , IO, ,PIN_PA6, ⊓, , AIN6±, AINN0, , , , , , , 
+PIN, DIGITAL , IO, ,PIN_PA7, , , AIN7±, AINP0, , , , , , EoA.1, "1,OUT"
 PIN, DIGITAL , IO, ,PIN_PB3, , TOSC1, , , RX0, , , WO0.1, , , "2,OUT"
 PIN, DIGITAL , IO, ,PIN_PB2, ⊓, TOSC2, , , TX0, , , WO2, , EoB, "2,IN2"
 # Right side pins
 ANCHOR, 1885, 755
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PINTEXT, POWER, IO, POWER , GND, PowerPin, Ground,
-PIN, DIGITAL , IO, ,PIN_PA3, , CLKI, AIN3, , XCK0.1|XCK1, SCK, , WO3, , , 
+PIN, DIGITAL , IO, ,PIN_PA3, , CLKI, AIN3±, , XCK0.1|XCK1, SCK, , WO3, , , 
 
 # Right Side Pins
 ANCHOR, 1885, 930
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , "1,WO", , 
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , "1,WO", , 
 
 # Right Side Pins
 ANCHOR, 1885, 1005
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA2, ⊓, , AIN2, , RX0.1|RX1, MISO, , , , EoA, 
+PIN, DIGITAL , IO, ,PIN_PA2, ⊓, , AIN2±, , RX0.1|RX1, MISO, , , , EoA, 
 
 # Right Side Pins
 ANCHOR, 1885, 1055
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , , "0,IN2"
+PIN, NONE , NO_TRIANGLE, ,, , , , , , , , , , , "0,IN2"
 
 # Right Side Pins
 ANCHOR, 1885, 1130
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA1, , BREAK, AIN1, , TX0.1|TX1, MOSI, , , , , "0,IN1"
+PIN, DIGITAL , IO, ,PIN_PA1, , BREAK, AIN1±, , TX0.1|TX1, MOSI, , , , , "0,IN1"
 PIN, DIGITAL , IO, ,PIN_PA0, , RESET|UPDI, , , , , , , , , "0,IN0"
 PIN, DIGITAL , IO, ,PIN_PB0, , , AIN11, AINN2, XDIR0, , SCL, WO0, , , "2,IN0"
 PIN, DIGITAL , IO, ,PIN_PB1, , , AIN10, AINP2, XCK0, , SDA, WO1, , , "2,IN1"
@@ -147,6 +146,12 @@ PIN, DIGITAL , IO, ,PIN_PB1, , , AIN10, AINP2, XCK0, , SDA, WO1, , , "2,IN1"
 # legend
 ANCHOR, 800, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, USART, SPI, TWI, TCA, TCB, EVSYS, CCL
+MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
+TEXT, none, black, Legend, NL
+
+ANCHOR, 800+1000, 10
+PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
+PIN, NONE , NO_TRIANGLE, ,,
 MESSAGE, 800, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL
