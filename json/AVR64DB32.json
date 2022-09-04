@@ -36,7 +36,7 @@
             },
             "11": {
                 "ADC": [
-                    "AIN1"
+                    "AIN1\u00b1"
                 ],
                 "CCL": [
                     "2,IN1"
@@ -60,7 +60,7 @@
                     "2,AINP0"
                 ],
                 "ADC": [
-                    "AIN2"
+                    "AIN2\u00b1"
                 ],
                 "CCL": [
                     "2,IN2"
@@ -86,7 +86,7 @@
                     "1,AINP1"
                 ],
                 "ADC": [
-                    "AIN3"
+                    "AIN3\u00b1"
                 ],
                 "CCL": [
                     "2,OUT"
@@ -106,7 +106,7 @@
                     "2,AINP1"
                 ],
                 "ADC": [
-                    "AIN4"
+                    "AIN4\u00b1"
                 ],
                 "Name": "PD4",
                 "OPAMP": [
@@ -122,7 +122,7 @@
                     "1,AINN0"
                 ],
                 "ADC": [
-                    "AIN5"
+                    "AIN5\u00b1"
                 ],
                 "Name": "PD5",
                 "OPAMP": [
@@ -140,7 +140,7 @@
                     "2,AINP3"
                 ],
                 "ADC": [
-                    "AIN6"
+                    "AIN6\u00b1"
                 ],
                 "CCL": [
                     "2,OUT.1"
@@ -162,7 +162,7 @@
                     "2,AINN2"
                 ],
                 "ADC": [
-                    "AIN7"
+                    "AIN7\u00b1"
                 ],
                 "EVSYS": [
                     "EoD.1"

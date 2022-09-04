@@ -260,9 +260,6 @@
                 ],
                 "Name": "PA5",
                 "PIN": "6",
-                "Special": [
-                    "VREFA"
-                ],
                 "TCA": [
                     "WO5"
                 ],

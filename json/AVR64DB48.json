@@ -225,7 +225,7 @@
                     "2,AINN1"
                 ],
                 "ADC": [
-                    "AIN0"
+                    "AIN0\u00b1"
                 ],
                 "CCL": [
                     "2,IN0"
@@ -238,7 +238,7 @@
             },
             "21": {
                 "ADC": [
-                    "AIN1"
+                    "AIN1\u00b1"
                 ],
                 "CCL": [
                     "2,IN1"
@@ -262,7 +262,7 @@
                     "2,AINP0"
                 ],
                 "ADC": [
-                    "AIN2"
+                    "AIN2\u00b1"
                 ],
                 "CCL": [
                     "2,IN2"
@@ -288,7 +288,7 @@
                     "1,AINP1"
                 ],
                 "ADC": [
-                    "AIN3"
+                    "AIN3\u00b1"
                 ],
                 "CCL": [
                     "2,OUT"
@@ -308,7 +308,7 @@
                     "2,AINP1"
                 ],
                 "ADC": [
-                    "AIN4"
+                    "AIN4\u00b1"
                 ],
                 "Name": "PD4",
                 "OPAMP": [
@@ -324,7 +324,7 @@
                     "1,AINN0"
                 ],
                 "ADC": [
-                    "AIN5"
+                    "AIN5\u00b1"
                 ],
                 "Name": "PD5",
                 "OPAMP": [
@@ -342,7 +342,7 @@
                     "2,AINP3"
                 ],
                 "ADC": [
-                    "AIN6"
+                    "AIN6\u00b1"
                 ],
                 "CCL": [
                     "2,OUT.1"
@@ -364,7 +364,7 @@
                     "2,AINN2"
                 ],
                 "ADC": [
-                    "AIN7"
+                    "AIN7\u00b1"
                 ],
                 "EVSYS": [
                     "EoD.1"
@@ -420,7 +420,7 @@
                     "0,AINP1"
                 ],
                 "ADC": [
-                    "AIN8"
+                    "AIN8\u00b1"
                 ],
                 "Name": "PE0",
                 "PIN": "30",
@@ -439,7 +439,7 @@
                     "2,AINP2"
                 ],
                 "ADC": [
-                    "AIN9"
+                    "AIN9\u00b1"
                 ],
                 "Name": "PE1",
                 "OPAMP": [
@@ -461,7 +461,7 @@
                     "0,AINP2"
                 ],
                 "ADC": [
-                    "AIN10"
+                    "AIN10\u00b1"
                 ],
                 "EVSYS": [
                     "EoE"
@@ -486,7 +486,7 @@
             },
             "33": {
                 "ADC": [
-                    "AIN11"
+                    "AIN11\u00b1"
                 ],
                 "Name": "PE3",
                 "OPAMP": [

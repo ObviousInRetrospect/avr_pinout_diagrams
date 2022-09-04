@@ -115,7 +115,7 @@ ANCHOR, 1445, 605
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PINTEXT, POWER, IO, POWER , VDD , PowerPin,"1.8V-5.5V"
 PIN, DIGITAL , IO, ,PIN_PA4, , , AIN4, , , XDIR.1, SS, , WO4, , WOA, , "0,OUT"
-PIN, DIGITAL , IO, ,PIN_PA5, , VREFA, AIN5, OUT, , , , , WO5, WO, WOB, , 
+PIN, DIGITAL , IO, ,PIN_PA5, , , AIN5, OUT, , , , , WO5, WO, WOB, , 
 PIN, DIGITAL , IO, ,PIN_PA6, ⊓, , AIN6, AINN0, DACo, , , , , , , , 
 PIN, DIGITAL , IO, ,PIN_PA7, , , AIN7, AINP0, , , , , , , , , "1,OUT"
 PIN, DIGITAL , IO, ,PIN_PB5, , CLKO, AIN8, AINP1, , , , , WO2.1, , , , 

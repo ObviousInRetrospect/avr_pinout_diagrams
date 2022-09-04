@@ -108,10 +108,10 @@ MESSAGE, 1029, 1218, 125, Name, 48, LEFT, TOP
 TEXT, none, black, 6, NL
 ANCHOR, 985, 1130
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA5, , VREFA, AIN5, OUT, , , , , WO5, , , , 
+PIN, DIGITAL , IO, ,PIN_PA5, , , AIN5, OUT, , , , , WO5, WO, , , 
 ANCHOR, 985, 1180
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NONE, ,, , , , , , , , , , WO, WOB, , 
+PIN, NONE , NONE, ,, , , , , , , , , , , WOB, , 
 MESSAGE, 1285, 1255, 125, Name, 144, LEFT, TOP
 TEXT, none, black, ATtiny--17, NL
 MESSAGE, 1185, 1363, 48, Name, 48, LEFT, TOP

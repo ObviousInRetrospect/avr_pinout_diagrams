@@ -1,9 +1,13 @@
 {
-    "add": {
-        "PA5": {
-            "Special": [
-                "VREFA"
-            ]
+    "mcu_re": {
+        "ATtiny[31][26]1[467]": {
+            "add": {
+                "PA5": {
+                    "Special": [
+                        "VREFA"
+                    ]
+                }
+            }
         }
     },
     "add_re_pad": {
