@@ -114,10 +114,10 @@ TEXT, none, black, B0 11, NL
 ANCHOR, 1445, 605
 PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PINTEXT, POWER, IO, POWER , VDD , PowerPin,"1.8V-5.5V"
-PIN, DIGITAL , IO, ,PIN_PA4, , , AIN4, , XDIR0.1|XDIR1, SS, , WO4, , , "0,OUT"
-PIN, DIGITAL , IO, ,PIN_PA5, , VREFA, AIN5, OUT, , , , WO5, "0,WO", , "3,OUT.1"
-PIN, DIGITAL , IO, ,PIN_PA6, ⊓, , AIN6, AINN0, , , , , , , 
-PIN, DIGITAL , IO, ,PIN_PA7, , , AIN7, AINP0, , , , , , EoA.1, "1,OUT"
+PIN, DIGITAL , IO, ,PIN_PA4, , , AIN4±, , XDIR0.1|XDIR1, SS, , WO4, , , "0,OUT"
+PIN, DIGITAL , IO, ,PIN_PA5, , VREFA, AIN5±, OUT, , , , WO5, "0,WO", , "3,OUT.1"
+PIN, DIGITAL , IO, ,PIN_PA6, ⊓, , AIN6±, AINN0, , , , , , , 
+PIN, DIGITAL , IO, ,PIN_PA7, , , AIN7±, AINP0, , , , , , EoA.1, "1,OUT"
 PIN, DIGITAL , IO, ,PIN_PB5, , CLKO, AIN8, AINP1, , , , WO2.1, , , 
 PIN, DIGITAL , IO, ,PIN_PB4, , RESET.1, AIN9, AINN1, , , , WO1.1, , , "0,OUT.1"
 PIN, DIGITAL , IO, ,PIN_PB3, , TOSC1, , , RX0, , , WO0.1, , , "2,OUT"
@@ -127,7 +127,7 @@ PIN, DIGITAL , IO, ,PIN_PB1, , , AIN10, AINP2, XCK0, , SDA, WO1, , , "2,IN1"
 ANCHOR, 1885, 605
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
 PINTEXT, POWER, IO, POWER , GND, PowerPin, Ground,
-PIN, DIGITAL , IO, ,PIN_PA3, , CLKI, AIN3, , XCK0.1|XCK1, SCK, , WO3, , , 
+PIN, DIGITAL , IO, ,PIN_PA3, , CLKI, AIN3±, , XCK0.1|XCK1, SCK, , WO3, , , 
 
 # Right Side Pins
 ANCHOR, 1885, 780
@@ -137,7 +137,7 @@ PIN, NONE , NONE, ,, , , , , , , , , "1,WO", ,
 # Right Side Pins
 ANCHOR, 1885, 855
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA2, ⊓, , AIN2, , RX0.1|RX1, MISO, , , , EoA, 
+PIN, DIGITAL , IO, ,PIN_PA2, ⊓, , AIN2±, , RX0.1|RX1, MISO, , , , EoA, 
 
 # Right Side Pins
 ANCHOR, 1885, 905
@@ -147,7 +147,7 @@ PIN, NONE , NONE, ,, , , , , , , , , , , "0,IN2"
 # Right Side Pins
 ANCHOR, 1885, 980
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA1, , BREAK, AIN1, , TX0.1|TX1, MOSI, , , , , "0,IN1"
+PIN, DIGITAL , IO, ,PIN_PA1, , BREAK, AIN1±, , TX0.1|TX1, MOSI, , , , , "0,IN1"
 PIN, DIGITAL , IO, ,PIN_PA0, , RESET|UPDI, , , , , , , , , "0,IN0"
 PIN, DIGITAL , IO, ,PIN_PC3, , , AIN15, , XDIR1.1, SS.1, , WO3.1, , , "1,IN0"
 PIN, DIGITAL , IO, ,PIN_PC2, ⊓, , AIN14, , TX1.1, MOSI.1, , , , EoC, "3,IN2"
