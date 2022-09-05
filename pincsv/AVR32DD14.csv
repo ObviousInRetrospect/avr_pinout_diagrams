@@ -129,7 +129,7 @@ PIN, DIGITAL , IO, ,PIN_PC3, ± ⩣, Fm+, AIN31, AINP4, , , XCK0.4|XDIR1, SCK.6|
 # legend
 ANCHOR, 600, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCD, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, ± : ain neg/pos|⩣ : on vddio2, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCD, EVSYS, CCL
 MESSAGE, 600, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL
 

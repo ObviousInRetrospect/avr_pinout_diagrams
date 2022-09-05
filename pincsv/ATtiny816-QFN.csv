@@ -185,7 +185,7 @@ PIN, DIGITAL , IO, ,PIN_PB3, , TOSC1, , , , RX, , , WO0.1, , , ,
 # legend
 ANCHOR, 600, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, DAC, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, ⊓ : async pin, Special, ADC, AC, DAC, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
 MESSAGE, 600, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL
 

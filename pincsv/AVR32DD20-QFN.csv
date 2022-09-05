@@ -186,7 +186,7 @@ PIN, DIGITAL , IO, ,PIN_PD6, ±, , AIN6, AINP3, DACo, , TX1.2|XCK0.3, SCK.4, , ,
 # legend
 ANCHOR, 500, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, ± : ain neg/pos|⩣ : on vddio2, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
 MESSAGE, 500, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL
 

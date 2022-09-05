@@ -225,7 +225,7 @@ PIN, DIGITAL , IO, ,PIN_PD5, ±, , AIN5, , , , RX0.3, MISO.4, , WO5.3, , WOD.4, 
 # legend
 ANCHOR, 550, 10
 PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NO_TRIANGLE, ,Name, IO, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
+PIN, NONE , NO_TRIANGLE, ,Name, ± : ain neg/pos|⩣ : on vddio2, Special, ADC, AC, DAC, ZCD, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
 MESSAGE, 550, 60, 125, Name, 72, RIGHT, TOP
 TEXT, none, black, Legend, NL
 
