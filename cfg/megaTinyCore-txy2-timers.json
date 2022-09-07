@@ -1,0 +1,14 @@
+{
+    "add_pwm": {
+        "PA1": "TCA0",
+        "PA2": "TCA0",
+        "PA3": "TCA0",
+        "PA7": "TCA0",
+        "has_per": {
+            "DAC0": {
+                "PA6": "DACOUT"
+            }
+        }
+    },
+    "src": "../megaTinyCore/megaavr/variants/txy2/pins_arduino.h"
+}

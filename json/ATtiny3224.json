@@ -1,6 +1,5 @@
 {
     "cfg": {
-        "bot_txt": "The notation RX0.1 is alternate position so Serial.swap(). You must choose RX0.1 and TX0.1 or RX0 and TX0 together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\nIO \u2293: asynch pin. {srcchip} Diagrams by ObviousInRetrospect.",
         "chip": "ATtiny3224",
         "repo_txt": "github.com/SpenceKonde/\nmegaTinyCore",
         "srcchip": "ATtiny3224 dfp.3.0.151",
@@ -35,9 +34,7 @@
                 "SPI": [
                     "MOSI"
                 ],
-                "Special": [
-                    "BREAK"
-                ],
+                "Special": [],
                 "USART": [
                     "TX0.1",
                     "TX1"
@@ -70,6 +67,9 @@
                 "ADC": [
                     "AIN3\u00b1"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA3",
                 "PIN": "13",
                 "SPI": [
@@ -79,7 +79,7 @@
                     "CLKI"
                 ],
                 "TCA": [
-                    "WO3"
+                    "WO3\u223f"
                 ],
                 "TCB": [
                     "1,WO"
@@ -100,13 +100,16 @@
                 "CCL": [
                     "0,OUT"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA4",
                 "PIN": "2",
                 "SPI": [
                     "SS"
                 ],
                 "TCA": [
-                    "WO4"
+                    "WO4\u223f"
                 ],
                 "USART": [
                     "XDIR1",
@@ -123,13 +126,16 @@
                 "CCL": [
                     "3,OUT.1"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA5",
                 "PIN": "3",
                 "Special": [
                     "VREFA"
                 ],
                 "TCA": [
-                    "WO5"
+                    "WO5\u223f"
                 ],
                 "TCB": [
                     "0,WO"
@@ -189,7 +195,8 @@
                     "EoB"
                 ],
                 "IO": [
-                    "\u2293"
+                    "\u2293",
+                    "\u223f"
                 ],
                 "Name": "PB2",
                 "PIN": "7",
@@ -197,7 +204,7 @@
                     "TOSC2"
                 ],
                 "TCA": [
-                    "WO2"
+                    "WO2\u223f"
                 ],
                 "USART": [
                     "TX0"
@@ -213,10 +220,13 @@
                 "CCL": [
                     "2,IN1"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PB1",
                 "PIN": "8",
                 "TCA": [
-                    "WO1"
+                    "WO1\u223f"
                 ],
                 "TWI": [
                     "SDA"
@@ -235,10 +245,13 @@
                 "CCL": [
                     "2,IN0"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PB0",
                 "PIN": "9",
                 "TCA": [
-                    "WO0"
+                    "WO0\u223f"
                 ],
                 "TWI": [
                     "SCL"

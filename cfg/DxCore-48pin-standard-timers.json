@@ -1,0 +1,14 @@
+{
+    "add_pwm": {
+        "PA4": "TCD0",
+        "PA5": "TCD0",
+        "PA6": "TCD0",
+        "PA7": "TCD0",
+        "PC0": "TCB2",
+        "PC1": "TCB3",
+        "PD6": "DACOUT",
+        "PF4": "TCB0",
+        "PF5": "TCB1"
+    },
+    "src": "../DxCore/megaavr/variants/48pin-standard/pins_arduino.h"
+}

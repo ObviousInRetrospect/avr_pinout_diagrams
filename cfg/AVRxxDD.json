@@ -35,5 +35,10 @@
         "PC[0-7]": {
             "IO":["⩣"]
         }
+    },
+    "extra":["DxCore"],
+    "cfg": {
+        "COMPACT_VERSION":false,
+        "chip_linestep":94
     }
 }

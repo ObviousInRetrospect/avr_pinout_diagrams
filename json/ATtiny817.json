@@ -1,6 +1,5 @@
 {
     "cfg": {
-        "bot_txt": "The notation RX.1 is alternate position so Serial.swap(). You must choose RX.1 and TX.1 or RX and TX together (exception: TCA).\nSignals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).\nIO \u2293: asynch pin. {srcchip} Diagrams by ObviousInRetrospect.",
         "chip": "ATtiny817",
         "chips": [
             "ATtiny817",
@@ -92,7 +91,8 @@
                     "Eo1"
                 ],
                 "IO": [
-                    "\u2293"
+                    "\u2293",
+                    "\u223f"
                 ],
                 "Name": "PB2",
                 "PIN": "14",
@@ -100,7 +100,7 @@
                     "TOSC2"
                 ],
                 "TCA": [
-                    "WO2"
+                    "WO2\u223f"
                 ],
                 "USART": [
                     "TX"
@@ -110,10 +110,13 @@
                 "ADC": [
                     "AIN10"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PB1",
                 "PIN": "15",
                 "TCA": [
-                    "WO1"
+                    "WO1\u223f"
                 ],
                 "TWI": [
                     "SDA"
@@ -126,10 +129,13 @@
                 "ADC": [
                     "AIN11"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PB0",
                 "PIN": "16",
                 "TCA": [
-                    "WO0"
+                    "WO0\u223f"
                 ],
                 "TWI": [
                     "SCL"
@@ -139,6 +145,9 @@
                 ]
             },
             "17": {
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PC0",
                 "PIN": "17",
                 "SPI": [
@@ -148,12 +157,15 @@
                     "WO.1"
                 ],
                 "TCD": [
-                    "WOC"
+                    "WOC\u223f"
                 ]
             },
             "18": {
                 "CCL": [
                     "1,OUT.1"
+                ],
+                "IO": [
+                    "\u223f"
                 ],
                 "Name": "PC1",
                 "PIN": "18",
@@ -161,7 +173,7 @@
                     "MISO.1"
                 ],
                 "TCD": [
-                    "WOD"
+                    "WOD\u223f"
                 ]
             },
             "19": {
@@ -181,6 +193,9 @@
                 "ADC": [
                     "AIN3"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA3",
                 "PIN": "2",
                 "SPI": [
@@ -190,7 +205,7 @@
                     "CLKI"
                 ],
                 "TCA": [
-                    "WO3"
+                    "WO3\u223f"
                 ],
                 "USART": [
                     "XCK.1"
@@ -215,9 +230,7 @@
                 ],
                 "Name": "PC4",
                 "PIN": "21",
-                "Special": [
-                    "BREAK.1"
-                ],
+                "Special": [],
                 "TCA": [
                     "WO4.1"
                 ]
@@ -258,9 +271,7 @@
                 "SPI": [
                     "MOSI"
                 ],
-                "Special": [
-                    "BREAK"
-                ],
+                "Special": [],
                 "TWI": [
                     "SDA.1"
                 ],
@@ -283,13 +294,16 @@
                 "CCL": [
                     "0,OUT"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA4",
                 "PIN": "5",
                 "SPI": [
                     "SS"
                 ],
                 "TCA": [
-                    "WO4"
+                    "WO4\u223f"
                 ],
                 "TCD": [
                     "WOA"
@@ -305,10 +319,13 @@
                 "ADC": [
                     "AIN5"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA5",
                 "PIN": "6",
                 "TCA": [
-                    "WO5"
+                    "WO5\u223f"
                 ],
                 "TCB": [
                     "WO"
@@ -325,10 +342,11 @@
                     "AIN6"
                 ],
                 "DAC": [
-                    "DACo"
+                    "DACo\u223f"
                 ],
                 "IO": [
-                    "\u2293"
+                    "\u2293",
+                    "\u223f"
                 ],
                 "Name": "PA6",
                 "PIN": "7"

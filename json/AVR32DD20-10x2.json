@@ -1,7 +1,9 @@
 {
     "cfg": {
+        "COMPACT_VERSION": false,
         "bot_txt_pre": "SPI.3 signals appearing on IO Multiplexing table in datasheet (PA0:MOSI.3, PA1:MISO.3, PC1:SS.3) are incorrect, per MCP case #01057955",
         "chip": "AVR32DD20",
+        "chip_linestep": 94,
         "shape": "rect",
         "srcchip": "AVR32DD20 dfp.2.1.152",
         "titlechip": "AVRxxDD20-10x2"
@@ -68,7 +70,8 @@
                     "1,IN1.1"
                 ],
                 "IO": [
-                    "\u2a63"
+                    "\u2a63",
+                    "\u223f"
                 ],
                 "Name": "PC1",
                 "PIN": "12",
@@ -77,7 +80,7 @@
                     "MOSI.6"
                 ],
                 "TCA": [
-                    "WO1.2"
+                    "WO1.2\u223f"
                 ],
                 "USART": [
                     "TX0.4",
@@ -99,7 +102,8 @@
                     "EoC"
                 ],
                 "IO": [
-                    "\u2a63"
+                    "\u2a63",
+                    "\u223f"
                 ],
                 "Name": "PC2",
                 "PIN": "13",
@@ -111,7 +115,7 @@
                     "Fm+"
                 ],
                 "TCA": [
-                    "WO2.2"
+                    "WO2.2\u223f"
                 ],
                 "TWI": [
                     "SDAs",
@@ -137,7 +141,8 @@
                     "1,OUT"
                 ],
                 "IO": [
-                    "\u2a63"
+                    "\u2a63",
+                    "\u223f"
                 ],
                 "Name": "PC3",
                 "PIN": "14",
@@ -149,7 +154,7 @@
                     "Fm+"
                 ],
                 "TCA": [
-                    "WO3.2"
+                    "WO3.2\u223f"
                 ],
                 "TWI": [
                     "SCLs",
@@ -169,13 +174,16 @@
                 "ADC": [
                     "AIN4\u00b1"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PD4",
                 "PIN": "16",
                 "SPI": [
                     "MOSI.4"
                 ],
                 "TCA": [
-                    "WO4.3"
+                    "WO4.3\u223f"
                 ],
                 "TCD": [
                     "WOC.4"
@@ -188,13 +196,16 @@
                 "ADC": [
                     "AIN5\u00b1"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PD5",
                 "PIN": "17",
                 "SPI": [
                     "MISO.4"
                 ],
                 "TCA": [
-                    "WO5.3"
+                    "WO5.3\u223f"
                 ],
                 "TCD": [
                     "WOD.4"
@@ -278,6 +289,9 @@
                     "0,IN0",
                     "0,IN0.1"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA0",
                 "PIN": "4",
                 "SPI": [],
@@ -287,7 +301,7 @@
                     "XTAL32K1.1"
                 ],
                 "TCA": [
-                    "WO0"
+                    "WO0\u223f"
                 ],
                 "TWI": [
                     "SDA.3"
@@ -301,6 +315,9 @@
                     "0,IN1",
                     "0,IN1.1"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA1",
                 "PIN": "5",
                 "SPI": [],
@@ -309,7 +326,7 @@
                     "XTAL32K2.1"
                 ],
                 "TCA": [
-                    "WO1"
+                    "WO1\u223f"
                 ],
                 "TWI": [
                     "SCL.3"
@@ -329,13 +346,16 @@
                 "EVSYS": [
                     "EoA"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA2",
                 "PIN": "6",
                 "Special": [
                     "Fm+"
                 ],
                 "TCA": [
-                    "WO2"
+                    "WO2\u223f"
                 ],
                 "TCB": [
                     "0,WO"
@@ -356,13 +376,16 @@
                 "CCL": [
                     "0,OUT"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA3",
                 "PIN": "7",
                 "Special": [
                     "Fm+"
                 ],
                 "TCA": [
-                    "WO3"
+                    "WO3\u223f"
                 ],
                 "TCB": [
                     "1,WO"
@@ -380,13 +403,16 @@
                 "ADC": [
                     "AIN24\u00b1"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA4",
                 "PIN": "8",
                 "SPI": [
                     "MOSI"
                 ],
                 "TCA": [
-                    "WO4"
+                    "WO4\u223f"
                 ],
                 "TCD": [
                     "WOA",
@@ -400,13 +426,16 @@
                 "ADC": [
                     "AIN25\u00b1"
                 ],
+                "IO": [
+                    "\u223f"
+                ],
                 "Name": "PA5",
                 "PIN": "9",
                 "SPI": [
                     "MISO"
                 ],
                 "TCA": [
-                    "WO5"
+                    "WO5\u223f"
                 ],
                 "TCD": [
                     "WOB",

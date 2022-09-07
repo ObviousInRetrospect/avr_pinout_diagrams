@@ -1,0 +1,16 @@
+{
+    "comment": "centralizing this set of timer inclusions for efficiency and to make including/excluding core-specific or core-version specific more straightforward",
+    "mcu_re": {
+        "AVR[0-9]*D[AB]28$": {"extra": ["DxCore-28pin-standard-timers"] },
+        "AVR[0-9]*D[AB]32$": {"extra": ["DxCore-32pin-standard-timers"] },
+        "AVR[0-9]*D[AB]48$": {"extra": ["DxCore-48pin-standard-timers"] },
+        "AVR[0-9]*D[AB]64$": {"extra": ["DxCore-64pin-standard-timers"] },
+        "AVR[0-9]*DD28$": {"extra": ["DxCore-28pin-ddseries-timers"] },
+        "AVR[0-9]*DD32$": {"extra": ["DxCore-32pin-ddseries-timers"] },
+        "AVR[0-9]*DD48$": {"extra": ["DxCore-48pin-ddseries-timers"] },
+        "AVR[0-9]*DD64$": {"extra": ["DxCore-64pin-ddseries-timers"] },
+        "AVR[0-9]*D[AB]64$": {"cfg": { "x_shift":-50 } }
+    },
+    "add_tca_pwm_re":[".*"],
+    "del_sg": ["PTC"]
+}

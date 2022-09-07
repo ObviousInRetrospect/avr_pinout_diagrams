@@ -1,0 +1,19 @@
+{
+    "add_pwm": {
+        "PA2": "TCB0",
+        "PA3": "TCB1",
+        "PA4": "TCD0_0WOA",
+        "PA5": "TCD0_0WOA",
+        "PA6": "TCD0_0WOA",
+        "PA7": "TCD0_0WOA",
+        "PC0": "TCB2",
+        "PD4": "TCD0_4WOC",
+        "PD5": "TCD0_4WOD",
+        "PD6": "DACOUT",
+        "PF0": "TCD0_2WOA",
+        "PF1": "TCD0_2WOB",
+        "PF2": "TCD0_2WOC",
+        "PF3": "TCD0_2WOD"
+    },
+    "src": "../DxCore/megaavr/variants/32pin-ddseries/pins_arduino.h"
+}

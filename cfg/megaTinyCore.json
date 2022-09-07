@@ -1,0 +1,17 @@
+{
+    "mcu_re": {
+        "ATtiny[0-9]*2$": {"extra": ["megaTinyCore-txy2-timers"] },
+        "ATtiny[0-9]*4$": {"extra": ["megaTinyCore-txy4-timers"] },
+        "ATtiny[0-9]*6$": {"extra": ["megaTinyCore-txy6-timers"] },
+        "ATtiny[0-9]*7$": {"extra": ["megaTinyCore-txy7-timers"] }
+    },
+    "del_sg": ["PTC"],
+    "del": {
+        "PA1": { "Special": ["BREAK"] },
+        "PC4": { "Special": ["BREAK.1"] }
+    },
+    "cfg":
+    {
+        "repo_txt": "github.com/SpenceKonde/\nmegaTinyCore"
+    }
+}

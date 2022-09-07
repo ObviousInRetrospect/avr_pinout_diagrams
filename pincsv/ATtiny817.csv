@@ -1,14 +1,15 @@
-LABELS,DEFAULT,TYPE,GROUP,Name,IO,Special,ADC,AC,DAC,USART,SPI,TWI,TCA,TCB,TCD,EVSYS,CCL
+LABELS,DEFAULT,TYPE,GROUP,Name,Special,ADC,AC,DAC,USART,SPI,TWI,TCA,TCA⚠,TCB⚠,TCD,TCD⚠,EVSYS,CCL
 
 BORDER COLOR, grey
 BORDER WIDTH, 2
 BORDER OPACITY, 1
-FILL COLOR, white, white, white, black,darkorchid,grey,forestgreen,limegreen,limegreen,mediumblue,dodgerblue,steelblue,red,maroon,mediumvioletred,darkorange,goldenrod
+FILL COLOR, white, white, white, black,grey,forestgreen,limegreen,limegreen,mediumblue,dodgerblue,steelblue,red,red,maroon,mediumvioletred,mediumvioletred,darkorange,goldenrod
 
 OPACITY, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 #FONT, Menlo,,
 FONT SIZE , 35
-FONT COLOR , black, black, black, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white, white
+FONT COLOR, black, black, black, white,white,white,white,black,white,white,white,white,lightgrey,lightgrey,white,lightgrey,white,white
+
 FONT SLANT , normal , , , , ,
 FONT BOLD , 600 , , , 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600, 600
 FONT STRETCH , normal
@@ -46,6 +47,7 @@ BOX, PAGE BORDER, black, 1, white, 1, 1, 100,100,0,0,0,0
 BOX, DETAIL BOX, darkblue, 1, white, 0, 3, 250, 200, 15,15,0,0
 BOX, CHIP BOX, black, 1, white, 0, 10, 250, 200, 15,15,0,0
 BOX, CLINE BOX, black, 1, white, 0, 1, 250, 200, 15,15,0,0
+BOX, PNUM, black, 1, yellow, 1, 1, 0, 42, 10, 10, 0, 0
 
 TEXT FONT, PowerPin, Dejavu Sans, 25, , black, normal, bold, normal
 #TEXT FONT, Heading, BenchNine, 50, , black, normal, 700, normal
@@ -62,155 +64,115 @@ GOOGLEFONT,"https://fonts.googleapis.com/css?family=M+PLUS+1+Code:300,400,700|Mo
 BOX, PAGE BORDER, 0,0, 100%, 100%
 
 # Draw Title
-MESSAGE, 1565, 350, 175, Heading, 144, CENTER, TOP
+MESSAGE, 1447, 150, 175, Heading, 144, CENTER, TOP
 TEXT, black,black,"ATtiny817 / ATtiny417",NL
 
 
 # draw chip outline
-CHIP45, CHIP BOX, 1159, 770, 981, 981, , TOP,
-MESSAGE, 50, 2340, 48, Name, 48, LEFT, TOP
-TEXT, none, black, "The notation RX.1 is alternate position so Serial.swap(). You must choose RX.1 and TX.1 or RX and TX together (exception: TCA).", NL
-TEXT, none, black, "Signals are often suffixed by the peripheral number so RX1 is UART1 rx. In a few cases n,FN is used (2,OUT.1).", NL
-TEXT, none, black, "IO ⊓: asynch pin.  Data from ATtiny817 dfp.3.0.151. Diagrams by ObviousInRetrospect.", NL
-MESSAGE, 1560, 690, 125, Name, 144, LEFT, TOP
-TEXT, none, black, o, NL
-MESSAGE, 1599, 653, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 1, NL
-ANCHOR, 1610, 505
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA2, ⊓, , AIN2, , , RX.1, MISO, SCL.1, , , , Eo0, "0,IN2"
-MESSAGE, 1529, 718, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 2, NL
-ANCHOR, 1485, 630
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA3, , CLKI, AIN3, , , XCK.1, SCK, , WO3, , , , 
-MESSAGE, 1404, 843, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 3, NL
-ANCHOR, 1360, 755
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PINTEXT, POWER, IO, POWER , GND, PowerPin, Ground,
-MESSAGE, 1279, 968, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 4, NL
-ANCHOR, 1235, 880
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PINTEXT, POWER, IO, POWER , VDD , PowerPin,"1.8V-5.5V"
-MESSAGE, 1154, 1093, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 5, NL
-ANCHOR, 1110, 1005
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA4, , , AIN4, , , XDIR.1, SS, , WO4, , WOA, , "0,OUT"
-MESSAGE, 1029, 1218, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 6, NL
-ANCHOR, 985, 1130
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA5, , , AIN5, OUT, , , , , WO5, WO, WOB, , 
-MESSAGE, 1285, 1255, 125, Name, 144, LEFT, TOP
+CHIP45, CHIP BOX, 1277, 416, 413, 413, , TOP,
+MESSAGE, 50, 1668, 48, Name, 48, LEFT, TOP
+TEXT, none, black, "Notation: Peripheral functions are noted in one of two ways, either FUNCn.m (where n is the number of the peripheral instance), and the", NL
+TEXT, none, black, "value after the dot is the pin set (PORTMUX setting). The .m is omitted for default pinset. So RX0.1 is the pin that would used by Serial0 for", NL
+TEXT, none, black, "receiving - 0 before the . tells you it's Serial 0, not some other serial port. and the .1 tells you that since it's not the default pinset, you need to", NL
+TEXT, none, black, "move it to those pins with Serial1.swap() prior to calling Serial.begin(). You must use RX0.1 along with TX0.1 or RX0 and TX0 (except for TCA", NL
+TEXT, none, black, "where all signals can move idependantly). For peripherals that have any signal ending in a digit, we use the form n,FUNC.m. For example,", NL
+TEXT, none, black, "2,OUT is CCL-LUT 2, default output pin, 2,OUT.1 is the alternate OUT, and 3,IN1 is the input 1 for LUT-3.", NL
+TEXT, none, black, "", NL
+TEXT, none, black, "⊓: Pins marked with ⊓ support asynchronous detection for interrupts and can wake from sleep on rising or falling.", NL
+TEXT, none, black, "∿: Pins marked with ∿ can be used with AnalogWrite. The timer signal is also marked. If it is a TCA, you must set TCAROUTEA", NL
+TEXT, none, black, "", NL
+TEXT, none, black, "AnalogWrite works only on pins marked with PWM support.", NL
+TEXT, none, black, "", NL
+TEXT, none, black, "We provide either a library or expanded API calls for every alternate function shown unless it is greyed out, the legend will include a ⚠", NL
+TEXT, none, black, " -- any code to make use of that functionality must be written by the user. See the links further down on this page for a full reference", NL
+TEXT, none, black, "of all expanded functions, and the included libraries for accessing the on-chip peripherals present on this part.", NL
+TEXT, none, black, "Data extracted from ATtiny817 dfp.3.0.151. Diagrams by ObviousInRetrospect for megaTinyCore 2.6.0 github.com/SpenceKonde/megaTinyCore.", NL
+TEXT, none, black, "", NL
+MESSAGE, 1432, 440, 52, Name, 144, LEFT, TOP
+TEXT, none, grey, o, NL
+ANCHOR, 1507, 305
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR1, ,PIN_PA2 ⊓, , AIN2, , , RX.1, MISO, SCL.1, , , , , , Eo0, "0,IN2"
+ANCHOR, 1470, 357
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR2, ,PIN_PA3 ∿, CLKI, AIN3, , , XCK.1, SCK, , WO3∿, , , , , , 
+ANCHOR, 1418, 409
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PINTEXT, POWER, PR3,  , GND, PowerPin, Ground,
+ANCHOR, 1366, 461
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PINTEXT, POWER, PR4,  , VDD , PowerPin,"1.8V-5.5V"
+ANCHOR, 1314, 513
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR5, ,PIN_PA4 ∿, , AIN4, , , XDIR.1, SS, , WO4∿, , , , WOA, , "0,OUT"
+ANCHOR, 1262, 565
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR6, ,PIN_PA5 ∿, , AIN5, OUT, , , , , WO5∿, , WO, , WOB, , 
+MESSAGE, 1337, 617, 52, Name, 62, LEFT, TOP
 TEXT, none, black, ATtiny--17, NL
-MESSAGE, 1185, 1363, 48, Name, 48, LEFT, TOP
+MESSAGE, 1297, 663, 20, Name, 20, LEFT, TOP
 TEXT, none, black, github.com/SpenceKonde/megaTinyCore, NL
-MESSAGE, 1210, 1413, 48, Name, 48, LEFT, TOP
+MESSAGE, 1322, 685, 20, Name, 20, LEFT, TOP
 TEXT, none, black, Diagrams by ObviousInRetrospect, NL
-MESSAGE, 1040, 1310, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 7, NL
-ANCHOR, 985, 1255
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA6, ⊓, , AIN6, AINN0, DACo, , , , , , , , 
-MESSAGE, 1154, 1424, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 8, NL
-ANCHOR, 1110, 1380
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PA7, , , AIN7, AINP0, , , , , , , , , "1,OUT"
-MESSAGE, 1279, 1549, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 9, NL
-ANCHOR, 1235, 1505
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PB7, , , , , , , , , , , , , 
-MESSAGE, 1404, 1674, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 10, NL
-ANCHOR, 1360, 1630
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PB6, , , , , , , , , , , , , 
-MESSAGE, 1529, 1799, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 11, NL
-ANCHOR, 1485, 1755
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PB5, , CLKO, AIN8, AINP1, , , , , WO2.1, , , , 
-MESSAGE, 1566, 1858, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 12, NL
-ANCHOR, 1610, 1880
-PINSET, LEFT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, DIGITAL , IO, ,PIN_PB4, , , AIN9, AINN1, , , , , WO1.1, , , , "0,OUT.1"
+ANCHOR, 1262, 617
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR7, ,PIN_PA6 ∿⊓, , AIN6, AINN0, DACo∿, , , , , , , , , , 
+ANCHOR, 1314, 669
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR8, ,PIN_PA7, , AIN7, AINP0, , , , , , , , , , , "1,OUT"
+ANCHOR, 1366, 721
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR9, ,PIN_PB7, , , , , , , , , , , , , , 
+ANCHOR, 1418, 773
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR10, ,PIN_PB6, , , , , , , , , , , , , , 
+ANCHOR, 1470, 825
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR11, ,PIN_PB5, CLKO, AIN8, AINP1, , , , , , WO2.1, , , , , 
+ANCHOR, 1507, 877
+PINSET, LEFT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR12, ,PIN_PB4, , AIN9, AINN1, , , , , , WO1.1, , , , , "0,OUT.1"
 # Right side pins
-ANCHOR, 1694, 505
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 1666, 653, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 24, NL
-PIN, DIGITAL , IO, ,PIN_PA1, , BREAK, AIN1, , , TX.1, MOSI, SDA.1, , , , , "0,IN1"
-ANCHOR, 1819, 630
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 1703, 690, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 23, NL
-PIN, DIGITAL , IO, ,PIN_PA0, , RESET|UPDI, AIN0, , , , , , , , , , "0,IN0"
-ANCHOR, 1944, 755
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 1828, 815, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 22, NL
-PIN, DIGITAL , IO, ,PIN_PC5, , , , , , , , , WO5.1, , , , "1,IN2"
-ANCHOR, 2069, 880
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 1953, 940, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 21, NL
-PIN, DIGITAL , IO, ,PIN_PC4, , BREAK.1, , , , , , , WO4.1, , , , "1,IN1"
-ANCHOR, 2194, 1005
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 2078, 1065, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 20, NL
-PIN, DIGITAL , IO, ,PIN_PC3, , , , , , , SS.1, , WO3.1, , , , "1,IN0"
-ANCHOR, 2319, 1130
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 2203, 1190, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 19, NL
-PIN, DIGITAL , IO, ,PIN_PC2, ⊓, , , , , , MOSI.1, , , , , Eo2, 
-ANCHOR, 2319, 1255
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 2214, 1315, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 18, NL
-PIN, DIGITAL , IO, ,PIN_PC1, , , , , , , MISO.1, , , , WOD, , "1,OUT.1"
-ANCHOR, 2194, 1380
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 2078, 1440, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 17, NL
-PIN, DIGITAL , IO, ,PIN_PC0, , , , , , , SCK.1, , , WO.1, WOC, , 
-ANCHOR, 2069, 1505
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 1953, 1565, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 16, NL
-PIN, DIGITAL , IO, ,PIN_PB0, , , AIN11, , , XDIR, , SCL, WO0, , , , 
-ANCHOR, 1944, 1630
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 1828, 1690, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 15, NL
-PIN, DIGITAL , IO, ,PIN_PB1, , , AIN10, , , XCK, , SDA, WO1, , , , 
-ANCHOR, 1819, 1755
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 1703, 1815, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 14, NL
-PIN, DIGITAL , IO, ,PIN_PB2, ⊓, TOSC2, , , , TX, , , WO2, , , Eo1, 
-ANCHOR, 1694, 1880
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-MESSAGE, 1661, 1858, 125, Name, 48, LEFT, TOP
-TEXT, none, black, 13, NL
-PIN, DIGITAL , IO, ,PIN_PB3, , TOSC1, , , , RX, , , WO0.1, , , , 
+ANCHOR, 1464, 305
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR24, ,PIN_PA1, , AIN1, , , TX.1, MOSI, SDA.1, , , , , , , "0,IN1"
+ANCHOR, 1501, 357
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR23, ,PIN_PA0, RESET|UPDI, AIN0, , , , , , , , , , , , "0,IN0"
+ANCHOR, 1553, 409
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR22, ,PIN_PC5, , , , , , , , , WO5.1, , , , , "1,IN2"
+ANCHOR, 1605, 461
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR21, ,PIN_PC4, , , , , , , , , WO4.1, , , , , "1,IN1"
+ANCHOR, 1657, 513
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR20, ,PIN_PC3, , , , , , SS.1, , , WO3.1, , , , , "1,IN0"
+ANCHOR, 1709, 565
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR19, ,PIN_PC2 ⊓, , , , , , MOSI.1, , , , , , , Eo2, 
+ANCHOR, 1709, 617
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR18, ,PIN_PC1 ∿, , , , , , MISO.1, , , , , WOD∿, , , "1,OUT.1"
+ANCHOR, 1657, 669
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR17, ,PIN_PC0 ∿, , , , , , SCK.1, , , , WO.1, WOC∿, , , 
+ANCHOR, 1605, 721
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR16, ,PIN_PB0 ∿, , AIN11, , , XDIR, , SCL, WO0∿, , , , , , 
+ANCHOR, 1553, 773
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR15, ,PIN_PB1 ∿, , AIN10, , , XCK, , SDA, WO1∿, , , , , , 
+ANCHOR, 1501, 825
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR14, ,PIN_PB2 ∿⊓, TOSC2, , , , TX, , , WO2∿, , , , , Eo1, 
+ANCHOR, 1464, 877
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, DIGITAL , PR13, ,PIN_PB3, TOSC1, , , , RX, , , , WO0.1, , , , , 
 
 # legend
-ANCHOR, 600, 10
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NO_TRIANGLE, ,Name, ⊓ : async pin, Special, ADC, AC, DAC, USART, SPI, TWI, TCA, TCB, TCD, EVSYS, CCL
-MESSAGE, 600, 60, 125, Name, 72, RIGHT, TOP
-TEXT, none, black, Legend, NL
-
-ANCHOR, 1600, 10
-PINSET, RIGHT, PACKED, CENTER, CENTER, 125, 30, 45, 60, 10, 0
-PIN, NONE , NO_TRIANGLE, ,,
-MESSAGE, 600, 60, 125, Name, 72, RIGHT, TOP
-TEXT, none, black, Legend, NL
+ANCHOR, 500, 10
+PINSET, RIGHT, PACKED, CENTER, CENTER, 52, 30, 45, 60, 10, 0
+PIN, NONE , NO_TRIANGLE, ,Name|∿ : analogWrite|⊓ : async pin, Special, ADC, AC, DAC, USART, SPI, TWI, TCA, TCA⚠, TCB⚠, TCD, TCD⚠, EVSYS, CCL
+MESSAGE, 575, 25, 52, Name, 60, RIGHT, TOP
+TEXT, none, black, Legend:, NL
